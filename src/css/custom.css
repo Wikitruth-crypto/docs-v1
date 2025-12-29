@@ -1,0 +1,326 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS 变量定义 - 基于 shadcn dark 模式 */
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0); /* old dark: oklch(0.141 0.005 285.823) */
+  --foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
+  --card: oklch(1 0 0); /* old dark: oklch(0.21 0.006 285.885) */
+  --card-foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
+  --popover: oklch(1 0 0); /* old dark: oklch(0.21 0.006 285.885) */
+  --popover-foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
+  --primary: oklch(0.205 0 0); /* old dark: oklch(0.696 0.17 162.48) - 绿色 */
+  --primary-foreground: oklch(0.985 0 0); /* old dark: oklch(0.393 0.095 152.535) */
+  --secondary: oklch(0.97 0 0); /* old dark: oklch(0.274 0.006 286.033) */
+  --secondary-foreground: oklch(0.205 0 0); /* old dark: oklch(0.985 0 0) */
+  --muted: oklch(0.97 0 0); /* old dark: oklch(0.274 0.006 286.033) */
+  --muted-foreground: oklch(0.556 0 0); /* old dark: oklch(0.705 0.015 286.067) */
+  --accent: oklch(0.97 0 0); /* old dark: oklch(0.274 0.006 286.033) */
+  --accent-foreground: oklch(0.205 0 0); /* old dark: oklch(0.985 0 0) */
+  --destructive: oklch(0.577 0.245 27.325); /* old dark: oklch(0.704 0.191 22.216) */
+  --border: oklch(0.922 0 0); /* old dark: oklch(1 0 0 / 40%) */
+  --input: oklch(0.922 0 0); /* old dark: oklch(1 0 0 / 15%) */
+  --ring: oklch(0.708 0 0); /* old dark: oklch(0.527 0.154 150.069) */
+  --chart-1: oklch(0.646 0.222 41.116); /* old dark: oklch(0.488 0.243 264.376) */
+  --chart-2: oklch(0.6 0.118 184.704); /* old dark: oklch(0.696 0.17 162.48) */
+  --chart-3: oklch(0.398 0.07 227.392); /* old dark: oklch(0.769 0.188 70.08) */
+  --chart-4: oklch(0.828 0.189 84.429); /* old dark: oklch(0.627 0.265 303.9) */
+  --chart-5: oklch(0.769 0.188 70.08); /* old dark: oklch(0.645 0.246 16.439) */
+  --sidebar: oklch(0.985 0 0); /* old dark: oklch(0.21 0.006 285.885) */
+  --sidebar-foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
+  --sidebar-primary: oklch(0.205 0 0); /* old dark: oklch(0.696 0.17 162.48) */
+  --sidebar-primary-foreground: oklch(0.985 0 0); /* old dark: oklch(0.393 0.095 152.535) */
+  --sidebar-accent: oklch(0.97 0 0); /* old dark: oklch(0.274 0.006 286.033) */
+  --sidebar-accent-foreground: oklch(0.205 0 0); /* old dark: oklch(0.985 0 0) */
+  --sidebar-border: oklch(0.922 0 0); /* old dark: oklch(1 0 0 / 10%) */
+  --sidebar-ring: oklch(0.708 0 0); /* old dark: oklch(0.527 0.154 150.069) */
+
+  /* 禁用背景色 */
+  --disabled: #232327;
+  --disabledText: #3b3b3d;
+
+  /* 订单状态色 */
+  --Storing: #4db325;
+  --OnSale: #b0b306;
+  --Waiting: #e28b19;
+  --Paid: #c7480d;
+  --Refunding: #bd0fb4;
+  --InSecrecy: #5e0fdd;
+  --Published: #3d63e0;
+  --Blacklisted: #4f5055;
+
+  /* 渐变背景 */
+  --gradient-background: radial-gradient(
+    circle at 37.50% 95%, 
+    rgba(166, 29, 197, 0.387) 0%,
+    rgba(43, 31, 133, 0.2) 45.62%,
+    transparent 88.23%), 
+    radial-gradient(circle at 97.50% 5%, 
+    rgba(153, 48, 240, 0.4) 0%,
+    transparent 31.20%), 
+    radial-gradient(circle at 2.50% 0%, 
+    rgba(155, 20, 167, 0.587) 0%,
+    transparent 26.74%), 
+    black;
+
+  /* 主题色 */
+  --theme: #c6a9fc;
+
+  /* 字体 */
+  --font-title: 'Hammersmith One', sans-serif;
+  --font-brand: 'Wallpoet', cursive;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  /* 兼容性变量 */
+  --color-theme: var(--theme);
+  --color-error: #ff4d4f;
+  --color-success: #52c41a;
+  --color-warning: #faad14;
+
+  /* 业务状态颜色 - 映射到Tailwind */
+  --color-Storing: var(--Storing);
+  --color-OnSale: var(--OnSale);
+  --color-Waiting: var(--Waiting);
+  --color-Paid: var(--Paid);
+  --color-Refunding: var(--Refunding);
+  --color-InSecrecy: var(--InSecrecy);
+  --color-Blacklisted: var(--Blacklisted);
+  --color-Published: var(--Published);
+
+  /* 圆角变量 */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+/* Dark 模式变量（Docusaurus 默认使用 .dark 类） */
+html[data-theme='dark'],
+.dark {
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.21 0.006 285.885);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.696 0.17 162.48);
+  --primary-foreground: oklch(0.393 0.095 152.535);
+  --secondary: oklch(0.274 0.006 286.033);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 40%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.527 0.154 150.069);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.21 0.006 285.885);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.527 0.154 150.069);
+}
+
+/* 基础样式重置 */
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    color: white;
+    background: black;
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-mono);
+  }
+
+  p, span, div, text {
+    font-family: var(--font-mono);
+    word-spacing: -0.2em;
+  }
+}
+
+/* Tailwind 工具类 - theme 颜色 */
+@layer utilities {
+  .text-theme {
+    color: var(--theme);
+  }
+  
+  .bg-theme {
+    background-color: var(--theme);
+  }
+  
+  .border-theme {
+    border-color: var(--theme);
+  }
+  
+  .hover\:text-theme:hover {
+    color: var(--theme);
+  }
+  
+  .font-title {
+    font-family: var(--font-title);
+  }
+  
+  .font-brand {
+    font-family: var(--font-brand);
+  }
+}
+
+/* Docusaurus 样式覆盖 */
+:root {
+  --ifm-color-primary: var(--theme);
+  --ifm-color-primary-dark: #b894fa;
+  --ifm-color-primary-darker: #ad82f9;
+  --ifm-color-primary-darkest: #9455f6;
+  --ifm-color-primary-light: #d4befd;
+  --ifm-color-primary-lighter: #dfcffd;
+  --ifm-color-primary-lightest: #f5f0fe;
+  --ifm-code-font-size: 95%;
+  --ifm-font-color-base: white;
+  --ifm-background-color: black;
+  --ifm-background-surface-color: #1a1a1a;
+  --ifm-navbar-background-color: rgba(0, 0, 0, 0.5);
+  --ifm-footer-background-color: rgba(0, 0, 0, 0.9);
+  --ifm-menu-color: rgba(255, 255, 255, 0.9);
+  --ifm-menu-color-active: var(--theme);
+  --ifm-toc-link-color: rgba(255, 255, 255, 0.7);
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: black;
+  --ifm-background-surface-color: #1a1a1a;
+}
+
+/* Docusaurus 默认 Navbar 和 Footer 样式定制 */
+/* 使默认 Navbar 和 Footer 的样式与自定义版本一致 */
+
+/* Navbar 样式 */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: blur(8px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.navbar__brand {
+  color: var(--theme) !important;
+  font-weight: bold !important;
+}
+
+.navbar__item {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar__item:hover {
+  color: var(--theme) !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.navbar__link--active {
+  color: var(--theme) !important;
+  font-weight: bold !important;
+}
+
+/* 隐藏 Navbar 中的外部链接图标 */
+.navbar__item svg,
+.navbar__link svg,
+.navbar__item .iconExternalLink,
+.navbar__link .iconExternalLink,
+.navbar__item .iconExternalLink_nPIU,
+.navbar__link .iconExternalLink_nPIU,
+.navbar__item use[href="#theme-svg-external-link"],
+.navbar__link use[href="#theme-svg-external-link"] {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+}
+
+/* Footer 样式 */
+.footer {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: blur(8px) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.footer__link-item {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.footer__link-item:hover {
+  color: var(--theme) !important;
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* 隐藏 Footer 中的外部链接图标 */
+.footer__link-item svg,
+.footer__link-item .iconExternalLink,
+.footer__link-item .iconExternalLink_nPIU,
+.footer__link-item use[href="#theme-svg-external-link"] {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+}
+
+/* 引用块（blockquote）样式 */
+blockquote {
+  background-color: rgba(216, 181, 223, 0.137) !important;
+  border-left: 4px solid var(--theme) !important;
+  border-radius: 4px;
+  padding: 1.5rem 1rem !important;
+  margin: 2rem 0 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-style: normal !important;
+}
+
+/* 确保引用块内的文字样式 */
+blockquote p {
+  margin: 0 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 引用块内的其他元素 */
+blockquote * {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
