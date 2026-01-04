@@ -20,7 +20,7 @@ const LinkList: React.FC<LinkListProps> = ({ links, activeKey, onLinkClick }) =>
 
   return (
     <>
-      {/* 桌面端 */}
+      {/* desktop */}
       <nav className="hidden md:flex gap-2 items-center">
         {links.map((item) => {
           const isActive = activeKey === item.name || location.pathname === item.href;
@@ -37,14 +37,14 @@ const LinkList: React.FC<LinkListProps> = ({ links, activeKey, onLinkClick }) =>
           );
         })}
       </nav>
-      {/* 移动端 */}
+      {/* mobile */}
       <div className="md:hidden relative">
         <button
           className="p-2 rounded text-white"
           onClick={() => setMenuOpen((v) => !v)}
           aria-label="Open menus"
         >
-          {/* 简单汉堡图标 */}
+          {/* simple hamburger icon */}
           <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
             <path d="M4 6h16M4 12h16M4 18h16" />
           </svg>

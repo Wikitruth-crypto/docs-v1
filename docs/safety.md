@@ -1,15 +1,13 @@
-﻿---
-title: 安全性（治理层面）
-description: 风险与合规、审计与透明度的治理安排。
+---
+title: Safety (Governance Level)
+description: Governance arrangements for risk and compliance, auditing, and transparency.
 sidebar:
   order: 19
 ---
 
-### 风险与合规
+### Risk and Compliance
 
-- **法律顾问与监测**：设立法律顾问基金，合作多家法律团队，持续关注主要司法辖区的监管变化；DAO 定期评估法律风险并制定应对策略，必要时调整参数或临时冻结高风险资产。
-- **周期性合规检查**：按季度发布《合规备忘录》，标注潜在监管变化与影响评估。
-- **数据主权尊重**：为敏感地域提供可配置的区域隔离策略（规划中）。
-- **执法配合边界**：DAO 投票决定是否对特定案件做区域性披露，所有操作链上可追溯。
-
-
+-   **Legal Advisory and Monitoring**: Establish a legal advisory fund, cooperate with multiple legal teams, and continuously monitor regulatory changes in major jurisdictions; the DAO regularly assesses legal risks and formulates response strategies, adjusting parameters or temporarily freezing high-risk assets when necessary.
+-   **Periodic Compliance Checks**: Release a "Compliance Memorandum" quarterly, marking potential regulatory changes and impact assessments.
+-   **Respect for Data Sovereignty**: Provide configurable regional isolation strategies for sensitive regions (in planning).
+-   **Law Enforcement Cooperation Boundaries**: The DAO votes on whether to pay a portion of the reward to the Minter on behalf of specific cases in exchange for the rapid disclosure of the truth.

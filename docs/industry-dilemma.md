@@ -1,32 +1,32 @@
 ---
-title: 行业困境：虚假繁荣与价值迷失
-description: 加密行业在投机与价值落地之间摇摆，信任被透支，真正的公共价值被边缘化。
+title: "Industry Dilemma: False Prosperity and Lost Value"
+description: The crypto industry sways between speculation and value landing, trust is overdrawn, and real public value is marginalized.
 sidebar:
   order: 13
 ---
 
-### 行业困境：巨人的技术，婴儿的伦理
+### Industry Dilemma: Technology of Giants, Ethics of Infants
 
-![Web3 行业困境](/docs/whoBuy.jpg)
+![Web3 Industry Dilemma](/docs/whoBuy.jpg)
 
-#### “赌场”吞噬了“革命”
+#### "Casino" Swallows "Revolution"
 
-我们要毫不客气地指出：**目前的加密行业，正在背离中本聪的初衷。**
+We must point out bluntly: **The current crypto industry is deviating from Satoshi Nakamoto's original intention.**
 
-曾几何时，Web3 许诺要重构生产关系，要赋予个人数据主权，要建立一个去信任的公平世界。然而，看看今天的市场：
+Once upon a time, Web3 promised to reconstruct production relations, grant individuals data sovereignty, and establish a trustless fair world. However, look at today's market:
 
-- **空气币的狂欢**：成千上万的 MEME 币没有任何实际用途，仅凭情绪煽动和传销式拉盘收割流动性。
-- **PVP 互割游戏**：由于缺乏外部造血能力，行业陷入了存量资金的残酷博弈。所谓的“创新”，大多是设计更复杂的庞氏模型，比谁跑得快。
-- **脱实向虚的闭环**：DeFi 服务于 DeFi，DAO 治理着空气。我们构建了人类历史上最复杂的金融基础设施，却似乎只为了交易几张猴子图片或狗头代币。
+-   **Carnival of Air Coins**: Thousands of MEME coins have no practical use, harvesting liquidity solely based on emotional incitement and pyramid-scheme-style pump and dump.
+-   **PVP Mutual Cutting Game**: Due to the lack of external blood-making ability, the industry has fallen into a cruel game of existing funds. Most so-called "innovations" are designed as more complex Ponzi models, competing on who runs faster.
+-   **Closed Loop from Real to Virtual**: DeFi serves DeFi, and DAO governs air. We have built the most complex financial infrastructure in human history, but it seems to be only for trading a few monkey pictures or dog head tokens.
 
-#### 信任的荒原
+#### Wasteland of Trust
 
-技术在进步，但行业的道德水位在倒退。
+Technology is progressing, but the moral water level of the industry is regressing.
 
-- **黑客与 Rug Pull**：代码漏洞与人性贪婪，让用户的资产时刻处于裸奔状态。
-- **监管的达摩克利斯之剑**：由于充斥着洗钱与欺诈，Web3 在主流视野中几乎成了“骗局”的代名词。真正的建设者被污名化，真正的创新被噪音淹没。
+-   **Hackers and Rug Pulls**: Code vulnerabilities and human greed leave users' assets in a state of naked running at all times.
+-   **Damocles Sword of Regulation**: Due to being flooded with money laundering and fraud, Web3 has almost become synonymous with "scam" in the mainstream view. Real builders are stigmatized, and real innovations are drowned in noise.
 
-**我们不禁要问：这就是我们想要的 Web3 吗？**
-如果区块链技术不能解决现实世界的哪怕一个真实痛点，不能为社会带来正向的外部性，那么它不仅是无用的，甚至是可耻的。
+**We can't help but ask: Is this the Web3 we want?**
+If blockchain technology cannot solve even a single real pain point in the real world, and cannot bring positive externalities to society, then it is not only useless but even shameful.
 
-WikiTruth 的诞生，正是源于对这种**“金融空转”**的极度不满。我们拒绝做另一个链上赌场，我们要做那把切开现实脓疮的手术刀。
+The birth of WikiTruth stems from extreme dissatisfaction with this **"financial idling"**. We refuse to be another on-chain casino; we want to be the scalpel that cuts open the abscess of reality.

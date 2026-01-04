@@ -1,27 +1,27 @@
-﻿---
-title: 奖励与费用
-description: 交易资金分配、保密费机制与激励设计。
+---
+title: Rewards and Fees
+description: Transaction fund allocation, confidentiality fee mechanism, and incentive design.
 sidebar:
   order: 12
 ---
 
-### 资金分配
+### Fund Allocation
 
-![交易资金分配](/docs/rewards-allocation.svg)
+![Transaction Fund Allocation](/docs/rewards-allocation.svg)
 
-#### 交易资金分配
+#### Transaction Fund Allocation
 
-- **平台服务费**：成功交易收取 3% 进入 DAO 国库， 将支持DAO治理与项目发展。
-- **Helper奖励**：符合条件的代理执行者（Seller/Completer）， 分别可以获得1%的交易金额。
-- **Minter奖励**：证据提供者获得交易金额主体（扣除Helper奖励）， 如果没有Helper， 则全部归Minter。
+-   **Platform Service Fee**: A 3% fee is charged on successful transactions and goes into the DAO treasury to support DAO governance and project development.
+-   **Helper Reward**: Eligible proxy executors (Seller/Completer) can each receive 1% of the transaction amount.
+-   **Minter Reward**: The evidence provider receives the main body of the transaction amount (deducting Helper rewards). If there is no Helper, it all goes to the Minter.
 
-#### 保密费分配
-与交易资金不同，保密费仅在 DAO、Minter分配， 不会分配给Helper。
+#### Confidentiality Fee Allocation
+Unlike transaction funds, confidentiality fees are only allocated between the DAO and the Minter, and will not be allocated to Helpers.
 
-### 递增保密费机制
+### Incremental Confidentiality Fee Mechanism
 
-![递增保密费机制图](/docs/confidentiality-fee.svg)
+![Incremental Confidentiality Fee Mechanism Chart](/docs/confidentiality-fee.svg)
 
-为维持TruthBox的保密状态，Buyer（Criminal） 需按“逐期递增”支付保密费。这枚“经济时间炸弹”迫使潜在加害方在“财务破产”与“主动自首”间抉择。
+To maintain the confidential status of the Truth Box, the Buyer (Criminal) needs to pay the confidentiality fee on an "increasing period" basis. This "economic time bomb" forces the potential perpetrator to choose between "financial bankruptcy" and "turning themselves in".
 
-> 费率与系数可由 DAO 治理合约投票调整。
+> Rates and coefficients can be adjusted by DAO governance contract voting.

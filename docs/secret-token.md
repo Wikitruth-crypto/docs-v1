@@ -1,38 +1,38 @@
-﻿---
-title: 隐私代币
-description: Sapphire 上的 ERC20Secret/WROSEsecret 隐私余额与 EIP-712 授权流程。
+---
+title: Privacy Token
+description: ERC20Secret/WROSEsecret privacy balance on Sapphire and EIP-712 authorization process.
 sidebar:
   order: 6
 ---
 
-### 隐私代币
+### Privacy Token
 
-项目使用基于 Oasis Sapphire 隐私库开发了一个通用的`ERC20Secret`合约，实现余额加密与隐私转账, 并提供基于 **EIP-712** 的签名授权接口，实现在链上不留痕迹的情况下完成代币交易。
+The project uses a general `ERC20Secret` contract developed based on the Oasis Sapphire privacy library to achieve encrypted balances and private transfers, and provides a signature authorization interface based on **EIP-712** to complete token transactions without leaving traces on-chain.
 
-- **余额隐私**：合约内部加密存储余额，普通查询仅返回本人可见数据。
-- **签名授权**：支持基于 EIP-712 的 VIEW / TRANSFER / APPROVE 许可，避免在链上暴露敏感授权细节。
-- **无事件日志**：不记录事件日志，避免在链上留下代币交易痕迹。
-- **防重放**：签名唯一性校验与过期时间限制，防止重复使用。
-- **Wrap/Unwrap**：与基础 ERC20 之间可包装/解包，兼容外部流动性， 原生代币如sapphire testnet（TEST），可以直接使用deposit/withdraw接口。
+-   **Balance Privacy**: The contract internally encrypts and stores balances, and ordinary queries only return data visible to the user themselves.
+-   **Signature Authorization**: Supports VIEW / TRANSFER / APPROVE permissions based on EIP-712, avoiding exposure of sensitive authorization details on-chain.
+-   **No Event Logs**: Does not record event logs, avoiding leaving token transaction traces on-chain.
+-   **Anti-Replay**: Signature uniqueness verification and expiration time limit prevent reuse.
+-   **Wrap/Unwrap**: Can wrap/unwrap with basic ERC20, compatible with external liquidity. Native tokens like sapphire testnet (TEST) can directly use deposit/withdraw interfaces.
 
-部署`ERC20Secret`合约后，通过`wrap`和`unwrap`接口，将`ERC20`代币包装成`ERC20Secret`代币，即可实现隐私代币的铸造。
+After deploying the `ERC20Secret` contract, use the `wrap` and `unwrap` interfaces to wrap `ERC20` tokens into `ERC20Secret` tokens to achieve the minting of privacy tokens.
 
-> 注意：每个ERC20Secret代币只能对应一个ERC20代币。
+> Note: Each ERC20Secret token can only correspond to one ERC20 token.
 
-#### 网络与合约部署（主网/测试网）
-- **WTRC**: wikitruth项目的代币
-- **WTRC.S**: WTRC的`ERC20Secret`代币。
-- **wROSE.S**: wROSE的`ERC20Secret`代币。
+#### Network and Contract Deployment (Mainnet/Testnet)
+-   **WTRC**: The token of the WikiTruth project.
+-   **WTRC.S**: The `ERC20Secret` token of WTRC.
+-   **wROSE.S**: The `ERC20Secret` token of wROSE.
 
-| 项目 | 主网（待定） | 测试网（当前） |
+| Item | Mainnet | Testnet |
 | --- | --- | --- |
-| 网络名称 | Oasis Sapphire | Oasis Sapphire Testnet |
+| Network Name | Oasis Sapphire | Oasis Sapphire Testnet |
 | Chain ID | 23294 | 23295 |
-| WTRC | 待填 | 0x990DE401CD0103a0107D27F82283db60F4844203 |
-| WTRC.S | 待填 | 0x449e2CD61F0328Ae68f4A530170C892B45b4B269 |
-| wROSE.S | 待填 | 0x4e30337908E19917f3F74adB45966114A55205c2 |
+| WTRC | TBD | 0x990DE401CD0103a0107D27F82283db60F4844203 |
+| WTRC.S | TBD | 0x449e2CD61F0328Ae68f4A530170C892B45b4B269 |
+| wROSE.S | TBD | 0x4e30337908E19917f3F74adB45966114A55205c2 |
 
-#### EIP-712 关键结构示例
+#### EIP-712 Key Structure Example
 
 ```solidity
 // EIP-712 domain parameters

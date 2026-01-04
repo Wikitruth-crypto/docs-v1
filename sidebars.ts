@@ -1,17 +1,18 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 /**
- * 侧边栏配置
- * 基于 sidebar.js 的结构进行配置
+ * Sidebar configuration
+ * Based on sidebar.js structure
+ * English is the default language
  */
 const sidebars: SidebarsConfig = {
-  // 默认侧边栏（中文）
-  // 注意：在 i18n 模式下，Docusaurus 会自动处理语言前缀
+  // Default sidebar (English)
+  // Note: In i18n mode, Docusaurus automatically handles language prefixes
   docs: [
     'intro',
     {
       type: 'category',
-      label: '简介与背景',
+      label: 'Introduction & Background',
       items: [
         'overview',
         'pain-points',
@@ -21,7 +22,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '技术文档',
+      label: 'Technical Documentation',
       items: [
         'smart-contracts',
         'secret-token',
@@ -30,7 +31,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '功能细节',
+      label: 'Feature Details',
       items: [
         'truth-box',
         'status-mechanism',
@@ -48,14 +49,14 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '未来计划',
+      label: 'Future Plans',
       items: [
         'reward-market',
       ],
     },
     {
       type: 'category',
-      label: '治理与合规',
+      label: 'Governance & Compliance',
       items: [
         'dao',
         'safety',
@@ -64,7 +65,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '技术展望',
+      label: 'Technical Outlook',
       items: [
         'industry-dilemma',
         'innovative',
@@ -74,7 +75,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '未来愿景与附录',
+      label: 'Future Vision & Appendix',
       items: [
         'future',
         'faq',

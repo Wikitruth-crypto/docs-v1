@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Introduction & Background": {
+    "message": "Introduction & Background",
+    "description": "The label for category 'Introduction & Background' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Technical Documentation": {
+    "message": "Technical Documentation",
+    "description": "The label for category 'Technical Documentation' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Feature Details": {
+    "message": "Feature Details",
+    "description": "The label for category 'Feature Details' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Tokenomics": {
+    "message": "Tokenomics",
+    "description": "The label for category 'Tokenomics' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Future Plans": {
+    "message": "Future Plans",
+    "description": "The label for category 'Future Plans' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Governance & Compliance": {
+    "message": "Governance & Compliance",
+    "description": "The label for category 'Governance & Compliance' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Technical Outlook": {
+    "message": "Technical Outlook",
+    "description": "The label for category 'Technical Outlook' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Future Vision & Appendix": {
+    "message": "Future Vision & Appendix",
+    "description": "The label for category 'Future Vision & Appendix' in sidebar 'docs'"
+  }
+}

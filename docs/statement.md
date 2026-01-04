@@ -1,44 +1,45 @@
 ---
-title: 重要声明
-description: 本文档并非投资、法律或任何专业建议，请谨慎评估风险并寻求独立咨询。
+title: Important Statement
+description: This document is not investment, legal, or any professional advice. Please evaluate risks carefully and seek independent consultation.
 sidebar:
   order: 24
 ---
 
-### 重要声明
+### Important Statement
 
-在使用 WikiTruth 平台或阅读本白皮书及相关文档之前，请务必仔细阅读并理解以下声明。本文档旨在提供信息，不构成任何形式的要约、招揽或建议。
+Before using the WikiTruth platform or reading this white paper and related documents, please carefully read and understand the following statements. This document is intended to provide information and does not constitute any form of offer, solicitation, or advice.
 
-#### 1. 非投资建议 (Not Investment Advice)
+#### 1. Not Investment Advice
 
-本文档所包含的所有信息，包括但不限于项目愿景、技术架构、代币经济模型、路线图及市场分析，均仅供参考。它们不构成任何投资建议、财务建议或交易建议。您不应基于本文档的任何内容做出投资决策。加密资产具有高度波动性，存在巨大的市场风险，可能导致您损失全部投资。在做出任何投资决策之前，请务必咨询独立的专业财务顾问，并进行充分的尽职调查。
+All information contained in this document (including but not limited to project vision, technical architecture, token economic model, roadmap, and market analysis) is for reference only and does not constitute any investment advice, financial advice, or trading advice. Crypto assets are highly volatile and carry significant market risks, which may result in the loss of your entire investment. Please consult an independent professional financial advisor and conduct sufficient due diligence before investing.
 
-#### 2. 非法律或税务建议 (Not Legal or Tax Advice)
+#### 2. Not Legal or Tax Advice
 
-本文档的任何内容均不构成法律、税务或其他专业建议。区块链和加密货币领域的法律法规复杂多变，且因司法管辖区而异。您应寻求独立的法律和税务顾问的专业意见，以了解 WikiTruth 平台或 WTRC 代币对您个人情况的适用性、合法性和税务影响。
+This document does not constitute legal, tax, or other professional advice. Laws and regulations in the blockchain and cryptocurrency fields are complex and changing, and vary by jurisdiction. You should seek professional advice from independent legal and tax advisors to understand the applicability, legality, and tax implications of the WikiTruth platform or WTRC tokens to your personal situation.
 
-#### 3. 技术风险 (Technical Risks)
+#### 3. Technical Risks
 
-WikiTruth 平台建立在复杂的 Web3 和隐私计算技术之上，包括智能合约、去中心化存储（IPFS/Arweave）、可信执行环境（TEE）等。尽管团队会尽力确保代码安全，但所有软件系统都可能存在未知的漏洞或错误。这些技术风险可能导致以下情况：
-- **智能合约漏洞**：可能导致资金损失或系统故障。
-- **网络攻击**：包括但不限于 DDoS 攻击、供应链攻击或针对底层区块链网络的攻击。
-- **隐私计算假设失效**：如果 TEE 等隐私技术的基础假设被攻破，可能导致机密数据泄露。
-- **升级风险**：合约升级过程中可能引入新的错误或产生不可预见的影响。
+The WikiTruth platform is built on complex Web3 and privacy computing technologies, including smart contracts, decentralized storage (IPFS/Arweave), Trusted Execution Environment (TEE), etc. Although the team will try its best to ensure code security, all software systems may have unknown vulnerabilities or errors. Technical risks include:
 
-#### 4. 监管风险 (Regulatory Risks)
+-   **Smart Contract Vulnerabilities**: May lead to fund loss or system failure.
+-   **Cyber Attacks**: Including but not limited to DDoS attacks, supply chain attacks, or attacks against the underlying blockchain network.
+-   **Failure of Privacy Computing Assumptions**: If basic assumptions of privacy technologies like TEE are breached, it may lead to confidential data leakage.
+-   **Upgrade Risks**: Contract upgrades may introduce new errors or produce unforeseen impacts.
 
-加密货币和区块链技术在全球范围内面临不确定的监管环境。未来可能会出现新的法律法规，或现有法规的解释发生变化，这可能对 WikiTruth 项目的运营、WTRC 代币的价值或用户的参与产生重大不利影响。WikiTruth 可能无法在所有司法管辖区内合法运营，用户需自行承担遵守当地法律法规的责任。
+#### 4. Regulatory Risks
 
-#### 5. 市场风险 (Market Risks)
+Cryptocurrencies and blockchain technology face an uncertain regulatory environment globally. New laws and regulations may emerge in the future, or the interpretation of existing regulations may change, which may have a significant adverse impact on the operation of the WikiTruth project, the value of WTRC tokens, or user participation. WikiTruth may not be able to operate legally in all jurisdictions, and users are responsible for complying with local laws and regulations.
 
-WTRC 代币的价格可能极度波动，并可能受到多种因素的影响，包括但不限于市场情绪、流动性、技术发展、宏观经济状况和监管变化。WikiTruth 平台上的证据价值和保密费水平也受市场供需动态影响，可能无法达到预期效果。
+#### 5. Market Risks
 
-#### 6. 信息准确性 (Accuracy of Information)
+The price of WTRC tokens may be extremely volatile, affected by various factors such as market sentiment, liquidity, technical development, macroeconomic conditions, and regulatory changes. The value of evidence and the level of confidentiality fees on the WikiTruth platform are also affected by market supply and demand dynamics and may not achieve the expected results.
 
-本文档中的所有信息均基于当前可获取的数据和团队的最佳判断。我们力求信息的准确性和完整性，但不对其任何错误、遗漏或过时负责。未来的发展、事件或情况可能与本文档中的前瞻性陈述有所不同。
+#### 6. Accuracy of Information
 
-#### 7. 用户责任 (User Responsibility)
+The information in this document is based on currently available data and the team's best judgment. We strive for the accuracy and completeness of the information but are not responsible for any errors, omissions, or obsolescence. Future developments, events, or circumstances may differ from forward-looking statements in this document.
 
-您对您在 WikiTruth 平台上的所有行为负全部责任。这包括但不限于遵守相关法律法规、保护您的私钥、评估交易对手风险以及理解您所参与的任何经济博弈的后果。WikiTruth 不对因您未能履行这些责任而造成的任何损失承担责任。
+#### 7. User Responsibility
 
-**通过访问、阅读或使用 WikiTruth 的任何相关信息或产品，您即表示您已理解并同意上述所有条款和条件。**
+You are fully responsible for all actions on the WikiTruth platform, including but not limited to complying with relevant laws and regulations, protecting private keys, assessing counterparty risks, and understanding the consequences of participating in economic games. WikiTruth is not responsible for any losses caused by your failure to fulfill these responsibilities.
+
+**By accessing, reading, or using any relevant information or products of WikiTruth, you indicate that you have understood and agreed to all the above terms and conditions.**

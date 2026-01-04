@@ -1,27 +1,25 @@
-﻿---
-title: 致谢
-description: 感谢团队、伙伴与社区的支持。
+---
+title: Acknowledgements
+description: Thanks to the team, partners, and community support.
 sidebar:
   order: 23
 ---
 
-### 致谢
+### Acknowledgements
 
-感谢所有为 WikiTruth 贡献力量的真相提供者、合作伙伴、投资人和社区用户。正是因为你们的支持与信任，WikiTruth 才能不断前行，推动社会正义事业的发展。同时我们依然要感谢那些为了真相而站出来的人，也许你并未使用WikiTruth，但是你们都是在为真相而战斗的勇士。
+Thanks to all truth providers, partners, investors, and community users who have contributed to WikiTruth. It is because of your support and trust that WikiTruth can continue to move forward and promote the development of social justice. At the same time, we still want to thank those who stood up for the truth. Maybe you haven't used WikiTruth, but you are all warriors fighting for the truth.
 
-**鸣谢 Web3**
-Web3 的兴起不仅是技术进步的体现，更是对传统互联网模式的一次深刻反思与颠覆。
-属于 Web3 的加密世界，建立在全球可用的基础上，凭借其近乎无摩擦的特性，
-打破了 Web2 所固有的种种限制，为每一个人提供了公平参与和成就自我的机会。
+**Thanks to Web3**
+The rise of Web3 is not only a reflection of technological progress but also a profound reflection and subversion of the traditional Internet model.
+The crypto world belonging to Web3 is built on a globally available basis. With its almost frictionless characteristics,
+it breaks the inherent limitations of Web2 and provides everyone with fair opportunities to participate and achieve themselves.
 
-在这个全新的网络时代，Web3 赋予了个人以更大的自主权和选择权。与过于依赖中心化平台的 Web2 时代相比，
-Web3 不再需要我们把信任寄托于某个单一的实体，而是通过去中心化的技术和机制，
-让我们能够在一个无需信任的环境中进行合作与创作。这一转变，正是让全球的创造力与潜力能够被充分挖掘、释放的关键所在。
+In this new network era, Web3 gives individuals greater autonomy and choice. Compared with the Web2 era which relied too much on centralized platforms,
+Web3 no longer requires us to place our trust in a single entity, but through decentralized technologies and mechanisms,
+allows us to cooperate and create in a trustless environment. This transformation is key to allowing global creativity and potential to be fully tapped and released.
 
-Web3 不仅是一种技术创新，更是一次伟大的社会实践，使得每个人都可以积极参与到建设更美好的世界中。
-在这个新的时代，我们有机会通过选择低信任需求的众筹工具，去支持那些勇于创新、富有潜力的开发者和项目。
-通过这种方式，我们在推动自身价值提升的同时，也推动了社会的进步与发展。
+Web3 is not only a technological innovation but also a great social practice, enabling everyone to actively participate in building a better world.
+In this new era, we have the opportunity to support those innovative and potential developers and projects by choosing low-trust requirement crowdfunding tools.
+In this way, while promoting the enhancement of our own value, we also promote the progress and development of society.
 
-感谢这一思想与技术的结合，让我们有机会共同构建一个更加公平、透明和可持续的未来。
-
-
+Thanks to this combination of thought and technology, giving us the opportunity to jointly build a fairer, more transparent, and sustainable future.

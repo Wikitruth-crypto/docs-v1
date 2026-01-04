@@ -1,37 +1,37 @@
-﻿---
-title: 未来展望
-description: 技术路线、前沿探索与生态愿景。
+---
+title: Future Outlook
+description: Technical roadmap, frontier exploration, and ecosystem vision.
 sidebar:
   order: 21
 ---
 
-### 未来展望
+### Future Outlook
 
-WikiTruth 的愿景是打造基于隐私加密技术的web3链上犯罪与真相揭露平台：技术负责“可验证”，经济模型负责“可持续”，社区负责“可治理”，让维护正义不再是少数人的孤单战斗。
+WikiTruth's vision is to create a Web3 on-chain crime and truth revelation platform based on privacy encryption technology: technology is responsible for "verifiability", the economic model is responsible for "sustainability", and the community is responsible for "governability", making the defense of justice no longer a lonely battle for a few.
 
-#### 技术发展方向
+#### Technical Development Direction
 
-- **AI 集成**：探索使用 AI 对加密证据进行非侵入式特征分析与分类，提升市场效率与真实性。
-- **跨链互操作性**：通过 LayerZero 等协议实现跨链部署，让更多公链用户参与。
-- **隐私计算**：引入 MPC / FHE 等技术，实现更复杂、受保护的数据协作。
+-   **AI Integration**: Explore using AI for non-intrusive feature analysis and classification of encrypted evidence to improve market efficiency and authenticity.
+-   **Cross-Chain Interoperability**: Implement cross-chain deployment through protocols like LayerZero to allow users from more public chains to participate.
+-   **Privacy Computing**: Introduce MPC / FHE technologies to achieve more complex and protected data collaboration.
 
-#### 前沿技术探究
+#### Frontier Technology Exploration
 
-- **零知识证明（ZKP）**：研究在不泄露内容的前提下证明证据格式/关键字，提升可信度。
-- **隐私交易**：在 Sapphire 基础上进一步结合 ZKP/MPC/FHE，实现更细粒度的权限控制与可验证隐私托管。
+-   **Zero-Knowledge Proofs (ZKP)**: Research proving evidence formats/keywords without revealing content to improve credibility.
+-   **Private Transactions**: Further combine ZKP/MPC/FHE on the basis of Sapphire to achieve finer-grained permission control and verifiable privacy custody.
 
-#### 生态系统愿景
+#### Ecosystem Vision
 
-未来的 WikiTruth 将覆盖证据收集、验证、交易、披露、法律援助的全链路服务，并与全球法律机构、媒体组织、公益团体合作，提升真相的可获取性与可执行性。
+The future WikiTruth will cover full-link services of evidence collection, verification, trading, disclosure, and legal aid, and cooperate with global legal institutions, media organizations, and public welfare groups to improve the accessibility and enforceability of truth.
 
-#### 里程碑与交付计划
+#### Milestones and Delivery Plan
 
-1. **短期（测试网阶段）**：完成隐私代币 EIP-712 测试、参数调优、公开安全测试与 Bug Bounty。
-2. **中期（主网初期）**：发布主网合约与地址清单，启动 DAO 参数治理与应急基金，多语言文档与 SDK 发布。
-3. **长期**：跨链部署、更多隐私计算集成、与司法/媒体/公益组织的标准化合作协议，形成可验证的全球真相网络。
+1.  **Short Term (Testnet Phase)**: Complete privacy token EIP-712 testing, parameter tuning, public security testing, and Bug Bounty.
+2.  **Medium Term (Mainnet Early Phase)**: Release mainnet contracts and address list, launch DAO parameter governance and emergency fund, release multi-language documentation and SDK.
+3.  **Long Term**: Cross-chain deployment, more privacy computing integration, standardized cooperation agreements with judicial/media/public welfare organizations, forming a verifiable global truth network.
 
-#### 建立正义联盟
+#### Establishing a Justice Alliance
 
-跨国合作与支持: 联合国际非政府组织、法治组织，展开合作，形成一个全球性的正义联盟，为系统性腐败和邪恶势力的揭露提供国际支持。
-共享资源与知识: 提供一个平台，允许不同国家的用户共享他们的经验和所需资源，以便更有效地对抗邪恶势力。
-WikiTruth将致力于通过发掘和传播真相，让邪恶势力的行为暴露在阳光下，从而增强社会对其的抵御能力。虽然挑战依然存在，但正义的力量永远不容低估，终将在黑暗中为人们指引方向。
+Transnational Cooperation and Support: Unite with international non-governmental organizations and rule-of-law organizations to launch cooperation and form a global alliance for justice to provide international support for the exposure of systemic corruption and evil forces.
+Resource and Knowledge Sharing: Provide a platform allowing users from different countries to share their experiences and needed resources to combat evil forces more effectively.
+WikiTruth will be committed to exposing the actions of evil forces to the sunlight by discovering and spreading the truth, thereby enhancing society's resilience against them. Although challenges remain, the power of justice should never be underestimated and will eventually guide people in the darkness.

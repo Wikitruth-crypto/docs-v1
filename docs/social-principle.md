@@ -1,32 +1,30 @@
 ---
-title: 社会学与人性博弈
-description: 深入剖析人性驱动，揭示 WikiTruth 如何撬动社会正义。
+title: Sociology and Human Nature Game
+description: In-depth analysis of human nature driving, revealing how WikiTruth leverages social justice.
 sidebar:
   order: 3
 ---
 
-### 社会与人性：正义为何沉默？
+### Society and Human Nature: Why is Justice Silent?
 
-![用户群体](/docs/user-group.svg)
+![User Group](/docs/user-group.svg)
 
-人类社会对正义的渴望是永恒的，然而，当个体面对强大的不公或犯罪势力时，往往陷入集体沉默。WikiTruth 深知这背后的复杂人性。
+Human society's desire for justice is eternal, yet when individuals face powerful injustice or criminal forces, they often fall into collective silence. WikiTruth understands the complex human nature behind this.
 
-1.  **道德良知与恐惧的撕裂**：知情者内心深处渴望正义，却常常被巨大的恐惧所束缚——恐惧报复、恐惧失去、恐惧未知。这种道德与现实利益的冲突，是阻碍真相浮出水面的第一道高墙。
-2.  **匿名与安全保障的匮乏**：在中心化权力体系下，举报人身份信息极易泄露，从而遭受残酷报复。一个真正安全、匿名、且技术上无法追踪的渠道，是释放良知的必要前提。
-3.  **利益回报与行动的激励**：纯粹依靠道德驱动的正义行动往往难以持久。当提供真相能获得合理且可观的回报时，正义行为将从个体牺牲转化为可持续的社会动力。这符合各国对举报人奖励政策的社会共识。
-4.  **真相的不可逆能量**：真相是所有谎言的终结者。一旦关键犯罪事实被公开，无论权势如何滔天，其根基都将被动摇，其威慑力将瞬间瓦解。
-5.  **正义心与现实落差的弥合**：多数人向往正义，却常被现实的冷酷所压制。WikiTruth 的存在，正是为了在制度层面，为那些“心有余而力不足”的正义之士，提供释放勇气的安全通道与经济支撑。
+1.  **Tear between Moral Conscience and Fear**: Insiders crave justice but are bound by fear—fear of retaliation, fear of loss, fear of the unknown. The conflict between morality and realistic interests is the first high wall preventing the truth from surfacing.
+2.  **Lack of Anonymity and Security Guarantees**: Under a centralized power system, whistleblower identity information is easily leaked, leading to retaliation. A truly safe, anonymous, and technically untraceable channel is a necessary prerequisite for releasing conscience.
+3.  **Incentives for Benefits and Action**: Justice actions driven purely by morality are difficult to sustain. When providing the truth can yield reasonable returns, justice behavior will transform from individual sacrifice into sustainable social momentum.
+4.  **Irreversible Energy of Truth**: Truth is the terminator of all lies. Once key criminal facts are disclosed, no matter how powerful the influence, its foundation will be shaken.
+5.  **Bridging the Gap between Justice and Reality**: Most people yearn for justice but are often suppressed by reality. WikiTruth provides a safe channel and financial support for those who are willing but unable to release their courage.
 
-### 罪犯的心态：恐惧与代价的螺旋
+### Criminal Mentality: Spiral of Fear and Cost
 
-![恐慌的罪犯](/docs/criminal2.jpg)
+WikiTruth deeply perceives the psychological weaknesses of criminals and transforms their fear into bargaining chips for maintaining justice.
 
-WikiTruth 不仅关注正义一方，更深入洞察并利用罪犯的心理弱点，将他们的恐惧转化为维护正义的筹码。
+1.  **Absolute Fear of Exposure**: What criminals fear most is not the law itself, but the complete exposure of the truth—meaning the collapse of social status, wealth, and reputation, and the ensuing legal sanctions and public opinion trials.
+2.  **Drive of Concealment Costs**: To maintain the "illusion", criminals may be willing to pay a high price to cover up the truth. WikiTruth's "Incremental Confidentiality Fee" mechanism accurately captures this psychology, making covering up the truth an unsustainable economic black hole.
+3.  **Shattering of Fluke Mentality**: Criminals always think the truth can be buried forever. But the inevitable disclosure of the WikiTruth mechanism will completely shatter this fluke.
+4.  **Disintegration of Internal Trust**: Criminal gangs are full of distrust. WikiTruth becomes a sword hanging over all accomplices—you never know who will turn you into a Truth Box for huge returns, thereby triggering internal games.
+5.  **Deterrence of Unknown Authenticity**: Even if unsure of the authenticity of the evidence in the Truth Box, the uncertainty of "what if it's true?" is enough to make criminals restless, prompting them to pay the price to verify authenticity.
 
-1.  **曝光的绝对恐惧**：罪犯最怕的不是法律本身，而是真相的彻底曝光——它意味着社会地位、财富、名誉的彻底崩塌，以及随之而来的法律制裁与舆论审判。
-2.  **隐匿成本的驱动**：为了维持“假象”，罪犯可能愿意支付高昂代价来掩盖或延迟真相的公开。WikiTruth 的“递增保密费”机制，正是精准捕捉了这种心理，让掩盖真相成为一个不可持续的经济黑洞。
-3.  **侥幸心理的破灭**：罪犯总以为只要能熬过一时，真相就能永远埋藏。但 WikiTruth 机制的必然公开性，将彻底击碎这种“万事大吉”的侥幸。
-4.  **内部信任的瓦解**：犯罪团伙内部本身就充斥着不信任。WikiTruth 成为了一把悬在所有同伙头上的利剑——你永远不知道谁会为了巨额回报而将你制成 Truth Box，从而引爆内部博弈，导致连锁反应。
-5.  **未知真伪的震慑**：即使不确定 Truth Box 中证据的真伪，“万一它是真的呢？”这种不确定性足以让罪犯坐立不安，促使其为验证真伪而付出代价，从而陷入 WikiTruth 精心设计的博弈陷阱。
-
-WikiTruth，正是通过精准锚定并放大这些复杂的人性与社会博弈，以代码之力，撬动正义的天平。
+WikiTruth precisely anchors and amplifies these complex human nature and social games, using the power of code to leverage the balance of justice.

@@ -1,54 +1,54 @@
 ---
-title: 启示：信任的重构
-description: 关于信任、机器与人类未来的哲学思考。
+title: "Enlightenment: Reconstruction of Trust"
+description: Philosophical reflections on trust, machines, and the future of humanity.
 sidebar:
   order: 20
 ---
 
-### 启示：我们在相信什么？
+### Enlightenment: What Do We Believe In?
 
-在这个加速熵增、日益混乱的世界里，我们似乎正遭遇一场前所未有的“信任危机”。
+In this world of accelerating entropy and increasing chaos, we are encountering an unprecedented "trust crisis".
 
-为什么庞氏骗局总能披着华丽的外衣收割财富？
-为什么承诺的神圣誓言常在利益面前化为齑粉？
-为什么拥有巨大权力的中心化机构，最终往往难以抵挡内部腐化的侵蚀？
+Why do Ponzi schemes always harvest wealth under gorgeous cloaks?
+Why do sacred vows often turn to dust in the face of interests?
+Why do centralized institutions with huge power often fail to resist internal corruption in the end?
 
-如果你透过现象的迷雾，凝视这个社会的底层代码，你会发现一个令人不安的真相：**我们的文明建立在极其脆弱且昂贵的“人际信任”之上。**
+If you look through the fog of phenomena and gaze at the underlying code of this society, you will find a disturbing truth: **Our civilization is built on extremely fragile and expensive "interpersonal trust".**
 
-### 1. 信任的成本与谎言的红利
+### 1. The Cost of Trust and the Dividend of Lies
 
-人类社会运转的每一次交互——无论是商业交易、司法判决，还是信息传播——本质上都是在进行“信任借贷”。
+Every interaction in the operation of human society—whether it is business transactions, judicial judgments, or information dissemination—is essentially "trust lending".
 
-- **信息不对称**：我们无法钻进对方的大脑确认意图，也无法全知全能地验证每一条信息的真伪。
-- **验证滞后性**：谎言往往是甜蜜且即时的，而真相的验证却总是漫长且痛苦的。骗子利用这个“时间差”，在真相穿上鞋子之前，已经跑遍了半个地球。
-- **人性黑箱**：我们寄希望于道德自律，寄希望于监管者的良知。但历史无数次证明，**人性是不可靠的变量，凡是依赖人性的系统，最终都会被人性所利用。**
+-   **Information Asymmetry**: We cannot confirm the other party's intentions, nor can we verify the authenticity of every piece of information omnisciently.
+-   **Verification Lag**: Lies are sweet and immediate, while the verification of truth is always long and painful. Liars use this "time difference" to run halfway around the earth before the truth arrives.
+-   **Human Nature Black Box**: We place our hopes on moral self-discipline and the conscience of regulators. But history has proven countless times that **human nature is an unreliable variable. Any system that relies on human nature will eventually be exploited by human nature.**
 
-这就是为什么骗子屡屡得手：因为在一个信息不透明、执行不透明的系统中，**作恶的成本远低于获取信任的收益。**
+This is why liars succeed repeatedly: in systems with opaque information and opaque execution, **the cost of doing evil is far lower than the benefit of gaining trust.**
 
-### 2. 代码即法律：从“不作恶”到“无法作恶”
+### 2. Code is Law: From "Don't Be Evil" to "Can't Be Evil"
 
-Web3 和区块链技术的出现，并非仅仅是金融工具的革新，而是一场**关于“信任”的物种进化**。它试图用数学的确定性，去填补人性不确定性的黑洞。
+The emergence of Web3 and blockchain technology is not just an innovation of financial tools, but a **species evolution regarding "trust"**. It attempts to use mathematical certainty to fill the black hole of human nature's uncertainty.
 
-当我们把规则写入智能合约，当我们把证据存入不可篡改的区块，我们正在经历一种范式的转移：
+When we write rules into smart contracts and store evidence in immutable blocks, we are experiencing a paradigm shift:
 
-- **去中心化（Decentralization）**：不再需要一个全知全能的“中间人”来维持秩序。当权力分散在网络的每一个节点，单点的腐败便无法撼动整体的正义。
-- **代码强制执行（Code is Law）**：在 WikiTruth 的世界里，如果没有支付保密费，真相就会自动公开。这不需要法官的裁决，不需要执行局的奔波，也不受贿赂的影响。这是**物理定律般的必然**，而非人类意志的偶然。
-- **无需许可的验证（Trustless Verification）**：你不需要“相信”我，你只需要验证代码。信任从一种感性的“信仰”，变成了一种理性的“计算”。
+-   **Decentralization**: There is no longer a need for an omniscient "middleman" to maintain order. When power is dispersed across every node of the network, single-point corruption cannot shake the overall justice.
+-   **Code Enforcement**: In the world of WikiTruth, if the confidentiality fee is not paid, the truth will be automatically disclosed. This does not require a judge's ruling, does not require the enforcement bureau to run around, and is not affected by bribery. This is **an inevitability like physical laws**, not an accident of human will.
+-   **Permissionless Verification**: You don't need to "believe" me, you just need to verify the code. Trust changes from emotional "faith" to rational "calculation".
 
-这是否意味着，我们将迎来一个不需要道德的世界？不。这恰恰意味着，我们可以把道德的重担，从脆弱的人性肩头卸下，通过技术手段，让**“诚实”成为系统中最优的博弈策略。**
+This does not mean a world that does not need morality, but rather unloads the burden of morality from the fragile shoulders of human nature, and through technical means, makes **"honesty" the optimal game strategy in the system.**
 
-### 3. 给混乱世界的提问
+### 3. Questions for a Chaotic World
 
-站在 Web3 的十字路口，WikiTruth 想向这个世界提出几个问题：
+Standing at the crossroads of Web3, WikiTruth wants to ask the world a few questions:
 
-> 如果真相不再是可以被随意涂抹的任人打扮的小姑娘，而是一块坚硬、冰冷、不可磨灭的加密磐石，那些习惯于在黑暗中操作权力的人，该如何适应光芒？
+> If the truth is no longer a little girl who can be dressed up by anyone, but a hard, indelible encrypted rock, how should those who are accustomed to operating power in the dark adapt to the light?
 
-> 如果正义的执行不再依赖于青天大老爷的恩赐，而是依赖于一段任何人无法停止的自动化程序，我们的社会结构将发生怎样的重构？
+> If the truth is disclosed in a positive way without incurring huge judicial costs, how will our society be reconstructed?
 
-> 当由于信息不对称带来的“取信成本”被技术无限趋近于零，人类的协作效率将释放出怎样惊人的能量？
+> When the "cost of trust" brought by information asymmetry is infinitely approached to zero by technology, what amazing energy will human collaboration release?
 
-我们坚信 Web3 能改变世界，不是因为它能创造暴富的神话，而是因为它提供了一种可能——**在一个充满谎言的荒原上，建立一座基于数学真理的灯塔。**
+We firmly believe that Web3 can change the world, not because it can create myths of sudden wealth, but because it provides a possibility—**to build a lighthouse based on mathematical truth on a wasteland full of lies.**
 
-它让我们看到，哪怕是在最混沌的黑暗中，依然存在着一种**不可篡改、不可抵赖、必然执行**的力量。
+It lets us see that even in the most chaotic darkness, there is still a force that is **immutable, undeniable, and inevitably executed.**
 
-这种力量，名为**共识**。
+This force is named **Consensus**.

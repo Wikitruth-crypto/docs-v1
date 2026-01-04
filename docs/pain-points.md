@@ -1,32 +1,34 @@
-﻿---
-title: 现状
-description: 权力腐蚀、公信力流失、证据易灭失，正义被拖延。
+---
+title: Status Quo
+description: Power corruption, loss of credibility, easy loss of evidence, delayed justice.
 sidebar:
   order: 2
 ---
 
-### 社会现状
+### Social Status Quo
 
-> 坏人是如何取得成功的？首先让好人得不到利益开始，然后好人就会失去积极性，最后坏人就取得了成功。
+> How do bad people succeed? First by not letting good people benefit, then good people lose their enthusiasm, and finally bad people succeed.
 
-人类漫长的历史，也是与犯罪和不公长期对抗的历史。尽管我们建立了复杂的司法系统试图惩恶扬善，然而现实中，权力、金钱与利益关系网如藤蔓般腐蚀着这套体系的根基。太多的真相被遮蔽、证据被消失、正义被延迟。越是关键的证据，越容易成为被封存、被篡改、被买断的对象。于是，受害者失声，知情者沉默，社会大众被困在恐惧与无力中， 人们不断失去原本属于他们的权益和利益。
+![Justice and Evil](/docs/good-bad.jpg)
 
-- **系统性风险**：中心化的机构（司法、媒体等）容易受到人为因素干预，导致证据处理流程不透明，结果可能被扭曲。
-- **举报人安全问题**：缺乏有效且有技术保障的匿名机制，总是有一个人知道那个证人就是你，而人又是极其不确定的，使证据提供者面临身份信息泄露的风险，进而可能遭受犯罪势力的报复。
-- **证据存续与完整性**：物理或数字证据在中心化存储系统中，存在被篡改、销毁或因服务器关闭而丢失的风险。
-- **协作效率低下**：跨国或跨机构案件里，数据共享与协作存在法律和操作层面的障碍，效率低下。
-- **大众缺乏积极性**：虽然我们的社会中有很多正义之士，但是基本依赖个人良知与道德驱动，一个不可否认的事实是大多数人对此冷漠。
+The long history of mankind is also a history of long-term confrontation with crime and injustice. Although we have established complex judicial systems to try to punish evil and promote good, in reality, power, money, and interest networks corrode the foundation of this system like vines. Too much truth is obscured, evidence disappears, and justice is delayed. The more critical the evidence, the easier it is to become the object of sealing, tampering, and buying out. As a result, victims lose their voices, insiders remain silent, and the public is trapped in fear and powerlessness.
 
-无数的历史案例表明，仅依靠个人道德或机构自律的披露模式难以长期奏效。我们需要一种不依赖人性和权力为前提的机制：让规则被执行，让数据不被篡改，让过程可验证，让代价被量化。
+-   **Systemic Risk**: Centralized institutions (judiciary, media, etc.) are vulnerable to human intervention, leading to opaque evidence handling processes and potentially distorted results.
+-   **Whistleblower Safety**: Lack of effective and technically guaranteed anonymous mechanisms exposes evidence providers to the risk of identity leakage and potential retaliation by criminal forces.
+-   **Evidence Persistence and Integrity**: Physical or digital evidence in centralized storage systems runs the risk of being tampered with, destroyed, or lost due to server shutdowns.
+-   **Low Collaboration Efficiency**: In transnational or cross-agency cases, data sharing and collaboration face legal and operational barriers, resulting in low efficiency.
+-   **Lack of Public Enthusiasm**: Although there are many righteous people in society, they basically rely on personal conscience and moral drive, and most people are indifferent to such events.
 
-### WikiTruth 如何重塑正义的版图
+Countless historical cases show that disclosure models relying solely on personal morality or institutional self-discipline are difficult to work in the long term. We need a mechanism that does not rely on human nature and power as prerequisites: let rules be executed, let data be immutable, let processes be verifiable, and let costs be quantified.
 
-Web3 技术以其颠覆性的特性，为解决上述困境提供了全新的思路：
+### How WikiTruth Reshapes the Landscape of Justice
 
-- **隐私区块链**：区块链本身具备不可篡改、按时间序列记录的公共账本，链上操作都会被永久记载，单方无法修改。在链上自动执行的公开代码逻辑，移除中心化中介，实现“代码即法律”。而oasis sapphire则提供了一个隐私的区块链环境，确保链上数据的隐私与安全。
-- **去中心化存储**：IPFS/Arweave 等协议将数据分片分布在全球节点，具备高可用与抗审查性，单一节点或机构无法删除数据。确保了证据的永久存续和抗权力干扰能力。
-- **代币经济**：代币经济可将“说出真相”转化为可量化的经济回报，激励更多人参与。
-- **代理交互**：通过 EIP-712 签名授权，通过官方中继账户与合约交互，用户并不需要与合约直接交互，甚至在区块链网络都不会留下任何痕迹。
-- **隐私代币**：通过隐私代币与 EIP-712 签名交互，链上无法追踪资金流向。
+Web3 technology, with its disruptive characteristics, provides new ideas for solving the above dilemmas:
 
-构建一个将“真相”与“经济价值”直接挂钩的去中心化交易市场，让揭露罪恶不再以牺牲个人安全为代价，真相不再遭受人为干预篡改，而是依赖公开可验证的协议规则，代码即法律， 正义有回报。
+-   **Privacy Blockchain**: Blockchain has an immutable public ledger recorded in chronological order. On-chain operations are permanently recorded and cannot be modified by a single party. Public code logic automatically executed on-chain removes centralized intermediaries, realizing "code is law". Oasis Sapphire provides a private blockchain environment ensuring the privacy and security of on-chain data.
+-   **Decentralized Storage**: Protocols like IPFS/Arweave distribute data shards across global nodes, possessing high availability and censorship resistance. A single node or institution cannot delete data, ensuring the permanent existence of evidence and resistance to power interference.
+-   **Token Economy**: The token economy transforms "telling the truth" into quantifiable economic returns, incentivizing more people to participate.
+-   **Proxy Interaction**: Through EIP-712 signature authorization, users interact with contracts through official relay accounts without directly interacting with contracts, leaving no traces on the blockchain network.
+-   **Privacy Token**: Through privacy tokens and EIP-712 signature interaction, on-chain fund flows cannot be traced.
+
+Building a decentralized trading market that directly links "truth" with "economic value", so that exposing evil no longer comes at the cost of sacrificing personal safety, and truth is no longer subject to human intervention and tampering, but relies on publicly verifiable protocol rules where code is law and justice is rewarded.

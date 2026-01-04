@@ -1,39 +1,39 @@
-﻿---
-title: 角色与交易
-description: 生态关键角色的职责与权限触发条件。
+---
+title: Roles and Trading
+description: Responsibilities of key ecosystem roles and permission trigger conditions.
 sidebar:
   order: 11
 ---
 
-### 生态关键角色
+### Key Ecosystem Roles
 
-- **Minter**：证据提供者与 Truth Box 创建者，价值源头。
-- **Seller**：当 Box 超过保护期后可代理上架，成交获得小额奖励， 必须不是Minter。
-- **Buyer**：支付购买/竞拍 Truth Box。
-- **Bidder**: 参与竞拍的用户。
-- **Completer**：退款申请期结束后可执行完成订单，领取执行奖励， 必须不是Buyer和Minter。
-- **DAO**：治理与参数调整、黑名单处理、交易争议裁决的最高权限实体。
+-   **Minter**: Evidence provider and Truth Box creator, the source of value.
+-   **Seller**: Can act as an agent to sell when the Box exceeds the protection period, earning a small reward upon transaction. Must not be the Minter.
+-   **Buyer**: Pays to purchase/bid for the Truth Box.
+-   **Bidder**: User participating in the auction.
+-   **Completer**: Can execute the completion of the order after the refund application period ends, claiming the execution reward. Must not be the Buyer or Minter.
+-   **DAO**: The highest authority entity for governance, parameter adjustment, blacklist processing, and transaction dispute adjudication.
 
-### 操作权限
+### Operational Permissions
 
-![角色与权限](/docs/roles-permission.svg)
+![Roles and Permissions](/docs/roles-permission.svg)
 
-- **ExtendDeadline**：只有Minter可延长Box的保护期， 但要注意必须在窗口期内。
-- **Sell/Auction**： Minter/Seller，第三方用户方可代理出售,但是必须是Box超过Deadline。
-- **Buy/Bid**: Buyer/Bidder,
-- **Request Refund**：Buyer,必须是在退款申请期限内。
-- **Refund Review**：Minter/DAO, Minter只能同意退款，DAO可拒绝退款， 但是必须注意审核期限， 超过后任何人可同意退款。
-- **Complete Order**：Box 处于退款申请期内时，只有Buyer可以完成订单，超过退款申请期后，任何人均可执行完成订单。
-- **Pay Confidentiality Fee**：Buyer，必须是在InSecrecy期内。
-- **Publish**：仅 Minter（Storing）或 Buyer（InSecrecy）可主动发布；超时则自动转 Published。
+-   **ExtendDeadline**: Only the Minter can extend the protection period of the Box, but it must be within the window period.
+-   **Sell/Auction**: Minter/Seller. Third-party users can act as agents to sell, but the Box must exceed the Deadline.
+-   **Buy/Bid**: Buyer/Bidder.
+-   **Request Refund**: Buyer, must be within the refund application period.
+-   **Refund Review**: Minter/DAO. The Minter can only agree to a refund. The DAO can refuse a refund, but must pay attention to the review deadline; after it passes, anyone can agree to the refund.
+-   **Complete Order**: When the Box is within the refund application period, only the Buyer can complete the order. After the refund application period, anyone can execute the completion of the order.
+-   **Pay Confidentiality Fee**: Buyer, must be within the InSecrecy period.
+-   **Publish**: Only Minter (Storing) or Buyer (InSecrecy) can actively publish; otherwise, it automatically turns to Published upon expiration.
 
-![交易流程](/docs/exchange-process.svg)
+![Exchange Process](/docs/exchange-process.svg)
 
-### 关于查看机密数据权限
+### About Confidential Data Viewing Permissions
 
-| 项目 | 主网（待定）
-| --- | --- | --- |
-| Storing | Minter | 
+| Status | Role |
+| --- | --- |
+| Storing | Minter |
 | Selling/Auctioning | Minter |
 | Paid | Buyer |
 | Refunding | Everyone |

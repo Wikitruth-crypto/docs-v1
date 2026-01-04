@@ -12,12 +12,12 @@ const links = [
 ];
 
 interface FooterProps {
-  // Docusaurus 可能会传递一些 props，但我们先不处理它们
+  // Docusaurus may pass some props, but we don't process them for now
   [key: string]: any;
 }
 
 export default function Footer(props: FooterProps): JSX.Element {
-  // 确保 Footer 始终显示，即使配置为空
+  // ensure the Footer is always displayed, even if the configuration is empty
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
   const handleShareClick = (e: React.MouseEvent) => {
@@ -113,7 +113,7 @@ export default function Footer(props: FooterProps): JSX.Element {
         </Container>
       </footer>
 
-      {/* 分享弹窗 */}
+      {/* share modal */}
       <ShareModal isOpen={isShareModalOpen} onOpenChange={setIsShareModalOpen} />
     </>
   );

@@ -1,15 +1,14 @@
-﻿---
-title: 代币经济模型
-description: WTRC 代币的分配、解锁与价值捕获设计。
+---
+title: Tokenomics
+description: Allocation, unlocking, and value capture design of WTRC tokens.
 sidebar:
   order: 15
 ---
 
-### 原生代币 WTRC
+### Native Token WTRC
 
-Truth Coin (WTRC) 是 WikiTruth 生态的原生代币，用于平台内交易、治理和激励。总供应量固定，代币是支撑生态持续发展的核心基础设施。
+Truth Coin (WTRC) is the native token of the WikiTruth ecosystem, used for in-platform transactions, governance, and incentives. The total supply is fixed, and the token is the core infrastructure supporting the sustainable development of the ecosystem.
 
-### 代币分配方案
+### Token Allocation Plan
 
-> 我们暂时未推出具体的代币分配方案，不过我们会根据项目的发展，推出合理的代币分配方案。
-
+> We have not yet launched a specific token allocation plan, but we will launch a reasonable token allocation plan based on the development of the project.

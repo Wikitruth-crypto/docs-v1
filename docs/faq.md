@@ -1,65 +1,54 @@
 ---
-title: 常见问题解答 (FAQ)
-description: 关于隐私保护、交易机制、法律风险及 DAO 治理的详细解答。
+title: FAQ
+description: Detailed answers on privacy protection, trading mechanisms, legal risks, and DAO governance.
 sidebar:
   order: 22
 ---
 
-### 基础概念
+### Basic Concepts
 
-**Q: WikiTruth 到底是什么？一个维基解密风格的网站吗？**
-**A:** 不完全是。WikiTruth 是一个**去中心化的证据交易市场**。维基解密是单向的发布平台，而 WikiTruth 引入了经济博弈。我们允许证据持有者（Minter）出售证据，也允许利益相关方（Buyer）通过支付“保密费”来暂时延迟证据的公开。但最终，所有因未续费而过期的证据都会自动向全网公开。
+**Q: What exactly is WikiTruth? A WikiLeaks-style website?**
+**A:** Not exactly. WikiTruth is a **decentralized evidence trading marketplace**. WikiLeaks is a one-way publishing platform, while WikiTruth introduces economic game theory. We allow evidence holders (Minters) to sell evidence, and also allow interested parties (Buyers) to temporarily delay the disclosure of evidence by paying "confidentiality fees". But ultimately, all evidence that expires without renewal will be automatically disclosed to the whole network.
 
-**Q: 我需要注册账号吗？**
-**A:** 不需要传统的邮箱或手机号注册。你只需要一个 Web3 钱包（如 MetaMask）。我们通过钱包地址和 SIWE (Sign-In with Ethereum) 验证你的身份，全程无需提供任何个人实名信息。
+**Q: Do I need to register an account?**
+**A:** No traditional email or mobile number registration is required. You only need a Web3 wallet (such as MetaMask). We verify your identity through your wallet address and SIWE (Sign-In with Ethereum), without providing any real-name personal information throughout the process.
 
 ---
 
-### 隐私与安全
+### Privacy and Security
 
-**Q: WikiTruth 如何保护举报人（Minter）的隐私？**
-**A:** 我们采用军工级的多重隐私防护：
-1.  **本地加密**：证据文件在你的浏览器本地进行切片和 AES-256 加密，上传到 IPFS 的全是乱码。
-2.  **链上隐私**：解密密钥被加密存储在 **Oasis Sapphire** 区块链的 TEE（可信执行环境）中。这意味着即使是验证节点的矿工，也无法看到密钥内容。
-3.  **网络隔离**：我们强烈建议使用 Tor 或 VPN 访问，配合我们的 EIP-712 代理合约，切断你的物理 IP 与链上地址的关联。
+**Q: How does WikiTruth protect the privacy of whistleblowers (Minters)?**
+**A:** We use multiple privacy protections:
+1.  **UserId Mapping**: The Minter is not publicly displayed; it is mapped to a UserId, and all on-chain events are replaced by the UserId.
+2.  **On-chain Privacy**: Private on-chain data is encrypted and stored in the TEE (Trusted Execution Environment) of the **Oasis Sapphire** blockchain, which has hardware-level security performance. This means that even the miners of the validator nodes cannot know who the Minter of the Box is.
+3.  **Network Isolation**: We strongly recommend using Tor or VPN for access, combined with our EIP-712 proxy contract, to cut off the association between your physical IP and on-chain address.
 
-**Q: 如果 WikiTruth 的网站被关闭了怎么办？**
-**A:** WikiTruth 不是一家公司，而是一套运行在区块链上的智能合约。
-- **前端**：我们的代码开源，且托管在去中心化存储（IPFS/Arweave）上，任何人都可以部署镜像站。
-- **后端**：智能合约一旦部署，就在 Oasis 网络上永续运行，无人可以关闭。
-- **数据**：证据存储在 IPFS 全球节点中，只要有一个节点存活，数据就不会丢失。
+**Q: What if WikiTruth's website is shut down?**
+**A:** WikiTruth is not a company, but a set of smart contracts running on the blockchain.
+-   **Frontend**: Our code is open source and hosted on decentralized storage (IPFS/Arweave), and anyone can deploy a mirror site.
+-   **Backend**: Once deployed, the smart contracts run perpetually on the Oasis network, and no one can shut them down.
+-   **Data**: Evidence is stored in global IPFS nodes; as long as one node survives, the data will not be lost.
 
-**Q: 平台如何防止有人恶意上传虚假证据或无关内容（如自拍）？**
+**Q: How does the platform prevent people from maliciously uploading false evidence or irrelevant content (such as selfies)?**
 **A:**
-1.  **经济成本**：铸造 Truth Box 需要质押代币，造假有金钱门槛。
-2.  **买家博弈**：最想验证真伪的是买家（通常是罪犯）。如果买家发现买到的是假货，会立即发起仲裁。
-3.  **DAO 治理**：社区可以通过投票将违规的 Truth Box 列入黑名单，没收发布者的质押金，并对其地址进行封禁。
+1.  **Economic Cost**: Minting a Truth Box requires paying gas fees, so counterfeiting has a monetary threshold.
+2.  **Buyer Game**: The one who wants to verify the authenticity the most is the buyer (usually the criminal). If the buyer finds that they bought a fake, they will immediately initiate arbitration.
+3.  **DAO Governance**: The community can vote to blacklist non-compliant Truth Boxes and ban their addresses.
 
 ---
 
-### 交易与机制
+### Trading and Mechanisms
 
-**Q: 为什么会有“保密费”这种设计？这不是勒索吗？**
-**A:** 这是一个哲学问题。在没有 WikiTruth 的世界，勒索在黑暗中进行，且往往伴随着人身威胁和无限期的掩盖。WikiTruth 将这一过程**程序化、透明化**。
-更重要的是，保密费是**指数递增**的（例如每月翻倍）。这意味着，无论买家多有钱，他终有一天会付不起这笔费用。因此，**真相的公开是数学上的必然，我们只是向邪恶征收了“时间的税”。**
+**Q: Why is there a "confidentiality fee" design? Is this not extortion?**
+**A:** This is a philosophical question. In a world without WikiTruth, extortion happens in the dark, often accompanied by physical threats and indefinite cover-ups. WikiTruth makes this process **procedural and transparent**.
+More importantly, the confidentiality fee is **exponentially increasing** (e.g., doubling every month). This means that no matter how rich the buyer is, one day they will not be able to afford this fee. Therefore, **the disclosure of truth is a mathematical inevitability; we are just levying a "time tax" on evil.**
 
-**Q: 我购买了证据（Truth Box），我拥有它的版权吗？**
-**A:** 你拥有的是该 NFT 的所有权和对机密内容的**独家访问权**（在保密期内）。你可以选择查看后销毁（但这不会阻止已备份的数据），也可以选择转手卖给其他人，或者停止支付保密费让其公开。
+**Q: If I buy the evidence (Truth Box), do I own its copyright?**
+**A:** There is no such thing as copyright for evidence. What you own is the ownership of the Box and the **exclusive access rights** to the confidential content (during the confidentiality period).
 
-**Q: 假如警察或者法院想要调取证据，你们会配合吗？**
-**A:** 即使我们想配合也**做不到**。
-WikiTruth 的管理员没有“后门”密钥。只有持有 NFT 的当前拥有者（可能是 Minter，也可能是 Buyer）才能解密内容。这是“代码即法律”的本质——权力属于私钥持有者，而非平台开发者。
+**Q: If the police or court wants to retrieve evidence, will you cooperate?**
+**A:** Even if we wanted to cooperate, we **cannot do it**.
+1. WikiTruth administrators do not have a "backdoor" key. Only the current owner holding the Box (which could be the Minter or the Buyer) can decrypt the content. This is the essence of "code is law"—power belongs to the private key holder, not the platform developer.
+2. Due to the mechanisms of confidentiality fees and time limits, the evidence will eventually be disclosed, so there is absolutely no need to take measures to retrieve the evidence.
 
 ---
-
-### 治理与代币
-
-**Q: 投资 WTRC 代币有什么用？**
-**A:** WTRC 是生态的血液：
-1.  **支付手段**：用于支付交易手续费、保密费和悬赏金。
-2.  **治理权**：质押 WTRC 获得 veWTRC，你可以投票决定平台的关键参数（如手续费率、保密费增长系数）以及黑名单裁决。
-3.  **收益分享**：协议收入的一部分将分配给治理参与者（具体比例由 DAO 投票决定）。
-
-**Q: WikiTruth 合法吗？**
-**A:** WikiTruth 是一个技术中立的基础设施工具。就像 BitTorrent 技术本身无罪，但有人用它下载盗版电影一样。
-我们在设计上极力规避直接触犯特定国家的法律（例如利用隐私链技术隔离数据知情权），但用户在使用时需自行遵守所在辖区的法律法规。对于涉及儿童色情、恐怖主义等反人类内容，DAO 将坚决予以封杀。

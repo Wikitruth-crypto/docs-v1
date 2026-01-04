@@ -1,31 +1,29 @@
-﻿---
-title: 项目概览
-description: WikiTruth 基于 Oasis Sapphire 隐私公链，专注机密证据的安全存储、可信交易与可控公开。
+---
+title: Project Overview
+description: WikiTruth is based on Oasis Sapphire privacy public chain, focusing on secure storage, trusted trading, and controlled disclosure of confidential evidence.
 sidebar:
   order: 1
 ---
 
-### 项目概览
+### Project Overview
 
-![项目 logo](/logo/logo-2.svg)
+> If you have never been exposed to Web3 and need to upload evidence to WikiTruth, we suggest you read this document first to understand the technical knowledge and operational process of WikiTruth.
 
-> 如果你从未接触过web3，需要在WikiTruth上传证据，那么我们建议你应该先阅读该文档，了解WikiTruth的技术知识和运行流程。
+WikiTruth is built on **Oasis Sapphire** (EVM-compatible privacy public chain) and **IPFS** (decentralized storage), aiming to solve the problems of privacy storage, trusted trading, and secure disclosure of "criminal evidence" in the real world.
 
-WikiTruth 构建在 **Oasis Sapphire**（EVM 兼容隐私公链）与 **IPFS** （去中心化存储）之上，旨在解决现实社会“犯罪证据”的隐私存储、可信交易与安全公开的问题。
+WikiTruth integrates encrypted storage, token incentives, and good-vs-evil game mechanisms through blockchain encryption technology to build a complete market around "trusted trading of criminal evidence". It solves the objective high-risk problem in the real world where "telling the truth exposes personal information and is disadvantageous to oneself". It guarantees the privacy of identity information, the content of evidence, and the persistence and integrity of evidence, ensuring that it can be protected, verified, and ultimately disclosed.
 
-wikitruth通过区块链加密技术融合加密存储、代币激励和善恶博弈机制，围绕“犯罪证据可信交易”构建一套完整市场。解决现实世界中“说出真相，会暴露个人信息，对自己不利”的客观高风险问题。保证身份信息隐私，证据内容、证据存续与完整性，既能被保护、也能被验证，并最终确保证据被公开。
+The core mission of WikiTruth is to establish a "safe channel to tell the truth" using decentralization and privacy computing. We believe that when exposing the truth no longer means being isolated and helpless, but instead receiving protection and rewards, and making those who try to cover up the truth pay a higher cost, it will promote social transparency and justice.
 
-WikiTruth 的核心使命是：用去中心化与隐私计算建立一条“安全说真话”的通道，我们相信，当揭露真相不再意味着孤立无援，而能获得保护与回报, 让试图遮盖真相的人付出更高昂的成本，推动社会透明与正义文明。
+We are pioneering a brand new "Crime Evidence Economy", deeply integrating Web3 encryption technology with the most urgent real-world problems to build a decentralized, private, anonymous, unmanipulatable, non-deceptive, fair, secure, and rewarding criminal evidence market.
 
-我们正在开创一个全新的“犯罪证据经济”（Crime Evidence Economy），将Web3加密技术与最迫切的现实问题深度融合，构建一个去中心化、隐私、匿名、不可操控、无欺骗性、公正、安全、可回报的犯罪证据市场。
+### Core Features
 
-### 核心特性
+- **Decentralization**: Core business logic is executed by on-chain smart contracts, not controlled by any single entity, eliminating power monopolies and single-point manipulation.
+- **Anonymity**: Interaction only requires mapping between wallet addresses and user IDs, collecting no personal identity information, maximizing the protection of whistleblowers and evidence uploaders.
+- **Security**: Evidence is encrypted locally, and decryption keys are encrypted on-chain via Sapphire TEE. Smart contracts constrain that only holders can read private data, ensuring content and key security.
+- **Economic Incentives**: Criminals who want to hide the truth must buy and pay confidentiality fees, while positive behaviors (such as providing evidence) receive corresponding income. A virtuous cycle of supply and demand drives the market.
+- **Community Governance**: DAO governance, collective decision-making, fully transparent on-chain.
+- **Incremental Confidentiality Fee Mechanism**: By increasing the confidentiality fee period by period, the cost of covering up evidence for a long time is raised, forcing criminals to actively show up or give up covering up the truth; the subsequent chapter "Rewards and Confidentiality Fees" will explain in detail.
 
-- **去中心化**：核心业务逻辑由链上智能合约执行，不受任何单一实体控制，消除权力垄断与单点操控。
-- **匿名性**：交互仅需钱包地址与用户 ID 映射，不收集个人身份信息，最大限度保护举报人与证据上传者。
-- **安全性**：证据在本地加密，解密密钥由 Sapphire TEE 加密上链，智能合约约束只有持有者才能读取隐私数据，确保内容与密钥安全。
-- **经济激励**：犯罪分子想要隐瞒真相，就必须购买和支付保密费，而积极行为（如提供证据）则获得相应的收入，供需的良性循环驱动市场。
-- **社区治理**：DAO 治理、集体决策、全链透明。
-- **递增保密费机制**：通过逐期增加保密费，提高长期掩盖证据的成本，倒逼犯罪分子主动现身或放弃遮盖真相；后续章节“奖励与保密费”将详细说明。
-
-> WikiTruth最大的特征是供给产生需求，先提供真相，后需求（公开/掩盖）真相。
+> The biggest feature of WikiTruth is that supply creates demand: provide the truth first, then demand (disclose/cover up) the truth.

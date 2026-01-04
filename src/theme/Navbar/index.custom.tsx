@@ -5,7 +5,7 @@ import LinkList from '../../components/customer/LinkList';
 import Button2 from '../../components/base/Button2';
 import { Container } from '../../components/Container';
 
-// 主站菜单
+// main site menu
 const mainMenu = [
   { name: 'Home', href: '/' },
   { name: 'Roadmap', href: '/roadmap' },
@@ -15,7 +15,6 @@ const mainMenu = [
 ];
 
 interface NavbarProps {
-  // Docusaurus 可能会传递一些 props，但我们先不处理它们
   [key: string]: any;
 }
 
@@ -23,7 +22,7 @@ export default function Navbar(props: NavbarProps): JSX.Element {
   const [activeKey, setActiveKey] = useState<string>('Home');
   const location = useLocation();
 
-  // 根据当前路径自动设置激活的菜单项
+  // automatically set the active menu item based on the current path
   useEffect(() => {
     const currentMenu = mainMenu.find((item) => item.href === location.pathname);
     if (currentMenu) {
@@ -34,7 +33,7 @@ export default function Navbar(props: NavbarProps): JSX.Element {
   }, [location.pathname]);
 
   const handleLaunchApp = () => {
-    // 在 Docusaurus 中，可以使用 window.location 或 Link 组件
+    // in Docusaurus, you can use window.location or Link component
     if (typeof window !== 'undefined') {
       window.location.href = '/app';
     }

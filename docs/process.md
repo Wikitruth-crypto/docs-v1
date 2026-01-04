@@ -1,21 +1,19 @@
-﻿---
-title: 运行流程
-description: 从本地加密到上链铸造、交易、保密与公开的全流程示意。
+---
+title: Operational Process
+description: Schematic of the full process from local encryption to on-chain minting, trading, confidentiality, and disclosure.
 sidebar:
   order: 4
 ---
 
-### 运行流程
+### Operational Process
 
-![简单流程](/docs/symbol-process.svg)
+![Simple Process](/docs/symbol-process.svg)
 
-假设(Criminal)进行了一些违法行为，证据被（Minter）掌握并在wikitruth上出售，而需求方（Buyer）需要购买以规避风险或试图推迟真相公开，流程如下：
+Suppose a (Criminal) has committed some illegal acts, and the evidence is held by a (Minter) and sold on WikiTruth, while the demander (Buyer) needs to buy it to avoid risks or try to delay the disclosure of the truth. The process is as follows:
 
-- **上载至存储**：加密文件以及元数据上传到 IPFS/Arweave。
-- **铸造 Truth Box**：提交到合约，并铸造 Truth Box。
-- **交易**：Truth Box可被上架出售或拍卖，Helper（Seller\Completer）则可能参与代理出售/完成交易，DAO治理则会在交易发生纠纷时参与审核。
-- **保密期**：交易完成后进入保密期，Buyer需按期支付保密费可延长保密期，否则 Truth Box 将自动公开。
-- **公开**：保密期到期或无人购买时自动公开，让真相回到公众视野。
+-   **Mint Truth Box**: Upload encrypted files and metadata to IPFS/Arweave, and mint a Truth Box in the contract.
+-   **Trading**: The Truth Box can be listed for sale or auction. Helpers (Seller\Completer) may participate in proxy selling/completing transactions, and DAO governance will participate in audits when trading disputes occur.
+-   **Confidentiality Period**: After the transaction is completed, it enters the confidentiality period. The Buyer needs to pay the confidentiality fee on time to extend the confidentiality period, otherwise the Truth Box will be automatically disclosed.
+-   **Disclosure**: Automatically disclosed when the confidentiality period expires or no one buys it, letting the truth return to the public eye.
 
-WikiTruth 的价值来自“掩盖真相”的高成本：遮蔽者不得不支付费用与保密成本，真相才会被迫走向公开；而提供证据、维护秩序的参与者获得回报，形成长期可持续的正向激励。
-
+WikiTruth's value comes from the high cost of "covering up the truth": the concealer has to pay fees and confidentiality costs before the truth is forced to go public; while participants who provide evidence and maintain order receive returns, forming a long-term sustainable positive incentive.

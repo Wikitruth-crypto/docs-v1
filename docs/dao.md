@@ -1,33 +1,29 @@
-﻿---
-title: DAO 社区治理
-description: DAO 的治理模型、提案与投票流程、仲裁规则。
+---
+title: DAO Community Governance
+description: DAO governance model, proposal and voting process, arbitration rules.
 sidebar:
   order: 18
 ---
 
-### 治理模型
+### Governance Model
 
-<!-- TODO: 增加DAO治理的流程图 -->
+<!-- TODO: Add DAO governance flowchart -->
 
-WikiTruth 采用去中心化自治组织（DAO）模式，协议最终控制权归属于质押 WTRC 的社区成员。通过透明的投票机制，社区可以决定平台的发展方向、参数调整与重要升级。
+WikiTruth adopts a Decentralized Autonomous Organization (DAO) model, where the ultimate control of the protocol belongs to community members who stake WTRC. Through a transparent voting mechanism, the community can decide the platform's development direction, parameter adjustments, and major upgrades.
 
-1. **治理范围**：DAO 有权通过投票修改关键协议参数（如交易费率、保密费系数、合约升级等）。
-2. **投票机制**：采用加权投票模型，投票权重与用户质押的 WTRC 数量和质押时长相关（veToken 思路），鼓励长期持有与深度参与。
+1.  **Governance Scope**: The DAO has the right to modify key protocol parameters (such as transaction fee rates, confidentiality fee coefficients, contract upgrades, etc.) through voting.
+2.  **Voting Mechanism**: A weighted voting model is adopted, where voting weight is related to the amount of WTRC staked by the user and the duration of the stake (veToken concept), encouraging long-term holding and deep participation.
 
-### 仲裁与黑名单规则
+### Arbitration and Blacklist Rules
 
-- **黑名单治理**：DAO 可以对违规地址/Truth Box 进行封禁、退款或销毁处理，所有操作链上留痕。
-- **争议裁决**：在退款/仲裁等场景，DAO 具备最终裁决权，并可授权多签安全理事会紧急处理高风险事件。
-- **公开透明**：所有提案、投票、处理决议与多签操作应公开可查。
+-   **Blacklist Governance**: The DAO can ban, refund, or destroy non-compliant addresses/Truth Boxes, with all operations recorded on-chain.
+-   **Dispute Adjudication**: In scenarios such as refunds/arbitration, the DAO has the final power of adjudication and can authorize a multi-signature security council to handle high-risk events in emergencies.
+-   **Openness and Transparency**: All proposals, votes, handling resolutions, and multi-signature operations should be publicly accessible.
 
-### DAO基金
+### DAO Funds
 
--**污点证人基金**：污点证人基金旨在为那些在Truth Market上上传犯罪证据并愿意转变为犯罪污点证人的参与者提供支持。这一基金将提供法律援助及资金支持，
-帮助他们在合作过程中免受法律风险带来的威胁。通过鼓励更多的人参与举报和披露犯罪活动，我们希望在Truth Market构建一个透明的环境，
-这样一来，犯罪行为将被有效打击，从而提升社会整体的法治意识。
--**法律顾问基金**：考虑到Truth Market在全球运营中的复杂法律环境，我们设立法律顾问基金以支持在重要法治国家内聘请专业法律顾问。
-法律顾问不仅将为项目提供合规性建议，还将帮助应对不同国家和地区的法律挑战，有效保障项目的合法性及持续运营。
-通过与法律专家的紧密合作，我们能够在制度上给予用户信心，确保Truth Market能够在各个法律框架下顺利运行。
+-   **Witness Protection Fund**: Provides legal aid and financial support to participants who upload criminal evidence on the Truth Market and are willing to turn state's witness, helping them avoid threats of legal risks and encouraging more people to participate in reporting and disclosing criminal activities.
 
--**生态发展基金**：生态发展基金将用于推动Truth Market的推广与市场扩展，其重点在于提升项目的影响力。我们计划针对不同的社区与市场，举办线上和线下活动，
-包括研讨会、讲座、展览以及社区聚会等。通过与利益相关者的直接互动，我们能够增强用户的忠诚度，吸引更多潜在参与者，从而为Truth Market的长远发展奠定基础。
+-   **Legal Advisory Fund**: Hires professional legal advisors in key rule-of-law countries to provide compliance advice, respond to legal challenges in different countries and regions, ensure the legitimacy and continuous operation of the project, and ensure the smooth operation of the Truth Market under various legal frameworks.
+
+-   **Ecosystem Development Fund**: Used to promote the marketing and expansion of the Truth Market. By organizing online and offline activities (seminars, lectures, exhibitions, community gatherings, etc.), it enhances the project's influence, strengthens user loyalty, and attracts more participants.

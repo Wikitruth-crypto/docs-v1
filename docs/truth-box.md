@@ -1,11 +1,11 @@
-﻿---
-title: 真相盒子（Truth Box）
-description: Truth Box 的链上数据结构与加密存储方式。
+---
+title: Truth Box
+description: On-chain data structure and encrypted storage method of Truth Box.
 sidebar:
   order: 8
 ---
 
-### 链上数据结构
+### On-chain Data Structure
 
 ```solidity
 struct PublicData {
@@ -21,19 +21,19 @@ struct SecretData {
 }
 ```
 
-- **PublicData**：公开的状态、定价与截止时间，用于交易撮合与到期判定。
-- **SecretData**：由 Sapphire TEE 加密的机密字段，含创建者地址、机密数据密文与随机数；仅经授权的 SIWE + 合约校验方可解封。
-- Truth Box 既是可转移的 NFT 载体，也是机密数据的访问控制入口。
+-   **PublicData**: Public status, pricing, and deadline, used for transaction matching and expiration judgment.
+-   **SecretData**: Confidential fields encrypted by Sapphire TEE, containing the creator address, ciphertext of confidential data, and nonce; only authorized SIWE + contract verification can decrypt.
+-   Truth Box is both a transferable NFT carrier and an access control entry for confidential data.
 
-### metadata
+### Metadata
 
-TruthBox 的元数据文件有两种,分别对应创建 TruthBox 的两种方式：`create`和`createAndPublish`， 以下展示了它们的主要区别。
+There are two types of metadata files for TruthBox, corresponding to the two ways of creating a TruthBox: `create` and `createAndPublish`. The following shows their main differences.
 
-<!-- TODO 以下两个code，应该实现tab切换展示的方式 -->
+<!-- TODO: The following two codes should be displayed in tabs -->
 
 #### create
 
-包含了对称加密后的数据。
+Contains symmetrically encrypted data.
 ```json
 {
   "mintMethod": "create",
@@ -63,7 +63,7 @@ TruthBox 的元数据文件有两种,分别对应创建 TruthBox 的两种方式
 
 #### createAndPublish
 
-不包含对称加密后的数据，而是直接存储了文件的 CID。
+Does not contain symmetrically encrypted data, but directly stores the CID of the file.
 ```json
 {
   "mintMethod": "createAndPublish",

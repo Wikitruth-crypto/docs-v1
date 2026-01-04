@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS 变量定义 - 基于 shadcn dark 模式 */
+/* shadcn dark */
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0); /* old dark: oklch(0.141 0.005 285.823) */
@@ -12,7 +12,7 @@
   --card-foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
   --popover: oklch(1 0 0); /* old dark: oklch(0.21 0.006 285.885) */
   --popover-foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
-  --primary: oklch(0.205 0 0); /* old dark: oklch(0.696 0.17 162.48) - 绿色 */
+  --primary: oklch(0.205 0 0); /* old dark: oklch(0.696 0.17 162.48) - green */
   --primary-foreground: oklch(0.985 0 0); /* old dark: oklch(0.393 0.095 152.535) */
   --secondary: oklch(0.97 0 0); /* old dark: oklch(0.274 0.006 286.033) */
   --secondary-foreground: oklch(0.205 0 0); /* old dark: oklch(0.985 0 0) */
@@ -38,11 +38,11 @@
   --sidebar-border: oklch(0.922 0 0); /* old dark: oklch(1 0 0 / 10%) */
   --sidebar-ring: oklch(0.708 0 0); /* old dark: oklch(0.527 0.154 150.069) */
 
-  /* 禁用背景色 */
+  /* disabled */
   --disabled: #232327;
   --disabledText: #3b3b3d;
 
-  /* 订单状态色 */
+  /* order status */
   --Storing: #4db325;
   --OnSale: #b0b306;
   --Waiting: #e28b19;
@@ -51,36 +51,20 @@
   --InSecrecy: #5e0fdd;
   --Published: #3d63e0;
   --Blacklisted: #4f5055;
-
-  /* 渐变背景 */
-  --gradient-background: radial-gradient(
-    circle at 37.50% 95%, 
-    rgba(166, 29, 197, 0.387) 0%,
-    rgba(43, 31, 133, 0.2) 45.62%,
-    transparent 88.23%), 
-    radial-gradient(circle at 97.50% 5%, 
-    rgba(153, 48, 240, 0.4) 0%,
-    transparent 31.20%), 
-    radial-gradient(circle at 2.50% 0%, 
-    rgba(155, 20, 167, 0.587) 0%,
-    transparent 26.74%), 
-    black;
-
-  /* 主题色 */
+  /* theme color */
   --theme: #c6a9fc;
 
-  /* 字体 */
-  --font-title: 'Hammersmith One', sans-serif;
+  /* font */
   --font-brand: 'Wallpoet', cursive;
   --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
 
-  /* 兼容性变量 */
+  /* compatibility variable */
   --color-theme: var(--theme);
   --color-error: #ff4d4f;
   --color-success: #52c41a;
   --color-warning: #faad14;
 
-  /* 业务状态颜色 - 映射到Tailwind */
+  /* business status color - mapped to Tailwind */
   --color-Storing: var(--Storing);
   --color-OnSale: var(--OnSale);
   --color-Waiting: var(--Waiting);
@@ -90,7 +74,7 @@
   --color-Blacklisted: var(--Blacklisted);
   --color-Published: var(--Published);
 
-  /* 圆角变量 */
+  /* corner variable */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -100,7 +84,7 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
-/* Dark 模式变量（Docusaurus 默认使用 .dark 类） */
+/* dark mode variable (Docusaurus default uses .dark class) */
 html[data-theme='dark'],
 .dark {
   --background: oklch(0.141 0.005 285.823);
@@ -136,7 +120,7 @@ html[data-theme='dark'],
   --sidebar-ring: oklch(0.527 0.154 150.069);
 }
 
-/* 基础样式重置 */
+/* basic style reset */
 @layer base {
   * {
     border-color: var(--border);
@@ -166,10 +150,11 @@ html[data-theme='dark'],
   p, span, div, text {
     font-family: var(--font-mono);
     word-spacing: -0.2em;
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 
-/* Tailwind 工具类 - theme 颜色 */
+/* Tailwind utility classes - theme color */
 @layer utilities {
   .text-theme {
     color: var(--theme);
@@ -188,7 +173,7 @@ html[data-theme='dark'],
   }
   
   .font-title {
-    font-family: var(--font-title);
+    font-family: var(--font-mono);
   }
   
   .font-brand {
@@ -196,7 +181,7 @@ html[data-theme='dark'],
   }
 }
 
-/* Docusaurus 样式覆盖 */
+/* Docusaurus style override */
 :root {
   --ifm-color-primary: var(--theme);
   --ifm-color-primary-dark: #b894fa;
@@ -221,10 +206,10 @@ html[data-theme='dark'] {
   --ifm-background-surface-color: #1a1a1a;
 }
 
-/* Docusaurus 默认 Navbar 和 Footer 样式定制 */
-/* 使默认 Navbar 和 Footer 的样式与自定义版本一致 */
+/* Docusaurus default Navbar and Footer style customization */
+/* Make the default Navbar and Footer styles consistent with the custom version */
 
-/* Navbar 样式 */
+/* Navbar style */
 .navbar {
   background-color: rgba(0, 0, 0, 0.95) !important;
   backdrop-filter: blur(8px) !important;
@@ -250,7 +235,7 @@ html[data-theme='dark'] {
   font-weight: bold !important;
 }
 
-/* 隐藏 Navbar 中的外部链接图标 */
+/* Hide the external link icons in the Navbar */
 .navbar__item svg,
 .navbar__link svg,
 .navbar__item .iconExternalLink,
@@ -268,7 +253,7 @@ html[data-theme='dark'] {
   opacity: 0 !important;
 }
 
-/* Footer 样式 */
+/* Footer style */
 .footer {
   background-color: rgba(0, 0, 0, 0.95) !important;
   backdrop-filter: blur(8px) !important;
@@ -288,7 +273,7 @@ html[data-theme='dark'] {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 
-/* 隐藏 Footer 中的外部链接图标 */
+/* Hide the external link icons in the Footer */
 .footer__link-item svg,
 .footer__link-item .iconExternalLink,
 .footer__link-item .iconExternalLink_nPIU,
@@ -302,9 +287,9 @@ html[data-theme='dark'] {
   opacity: 0 !important;
 }
 
-/* 引用块（blockquote）样式 */
+/* quote block style */
 blockquote {
-  background-color: rgba(216, 181, 223, 0.137) !important;
+  background-color: rgba(183, 181, 184, 0.137) !important;
   border-left: 4px solid var(--theme) !important;
   border-radius: 4px;
   padding: 1.5rem 1rem !important;
@@ -313,14 +298,110 @@ blockquote {
   font-style: normal !important;
 }
 
-/* 确保引用块内的文字样式 */
+/* ensure the text style inside the quote block */
 blockquote p {
   margin: 0 !important;
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
-/* 引用块内的其他元素 */
+/* other elements inside the quote block */
 blockquote * {
   color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* hide the breadcrumb navigation in the document page */
+.theme-doc-breadcrumbs,
+.breadcrumbs,
+.breadcrumbs__item,
+.breadcrumbs__link {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* hide the document title (if needed to hide in the content area) */
+/* note: this will hide the first h1 title in the document content */
+.theme-doc-markdown > h1:first-child {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* title style in the document content - larger and bolder */
+.theme-doc-markdown h1,
+.theme-doc-markdown h2,
+.theme-doc-markdown h3,
+.theme-doc-markdown h4,
+.theme-doc-markdown h5,
+.theme-doc-markdown h6 {
+  font-weight: 600 !important;
+  font-weight: medium !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.3 !important;
+  font-family: var(--font-mono);
+}
+
+/* h1 title - maximum */
+.theme-doc-markdown h1 {
+  font-size: 2.25rem !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* h2 title */
+.theme-doc-markdown h2 {
+  font-size: 1.875rem !important;
+  margin-top: 2.25rem !important;
+  margin-bottom: 1.25rem !important;
+}
+
+/* h3 title (e.g. "Core Features") */
+.theme-doc-markdown h3 {
+  font-size: 1.5rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* h4 title */
+.theme-doc-markdown h4 {
+  font-size: 1.25rem !important;
+  margin-top: 1.75rem !important;
+  margin-bottom: 0.875rem !important;
+}
+
+/* h5 title */
+.theme-doc-markdown h5 {
+  font-size: 1.125rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* h6 title */
+.theme-doc-markdown h6 {
+  font-size: 1rem !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.625rem !important;
+}
+
+/* Copyable address cell styles */
+.theme-doc-markdown table td.copyable-address-cell {
+  cursor: pointer !important;
+  user-select: none !important;
+  transition: color 0.2s ease, opacity 0.2s ease !important;
+}
+
+.theme-doc-markdown table td.copyable-address-cell:hover {
+  opacity: 0.8 !important;
+  color: var(--theme) !important;
+}
+
+.theme-doc-markdown table td.copyable-address-cell:active {
+  opacity: 0.6 !important;
 }
 

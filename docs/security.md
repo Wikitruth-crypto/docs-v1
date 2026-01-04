@@ -1,23 +1,46 @@
-﻿---
-title: 安全与信任
-description: 用户隐私保护、数据完整性与主网/测试网授权策略。
+---
+title: Security and Trust
+description: User privacy protection, data integrity, and mainnet/testnet authorization strategies.
 sidebar:
   order: 7
 ---
 
-### 用户隐私保护
+### User Privacy Protection
 
-- **隐藏address**：协议交互基于钱包地址与 `UserId` 映射，在事件日志中不会暴露钱包地址，而以 `UserId` 代替，降低链上关联性。
-- **SIWE 权限验证**：读取重要数据需通过钱包签名 SIWE 令牌，合约并不提供地址参数访问函数。
-- **主网授权模式**：主网上线后将全面采用 EIP-712 签名授权交互，减少链上可见行为；
+-   **Hidden Address**: Protocol interaction is based on the mapping between wallet address and `UserId`. The wallet address is not exposed in event logs, but replaced by `UserId`, reducing on-chain association.
+-   **SIWE Permission Verification**: Reading important data requires a wallet-signed SIWE token. The contract does not provide address parameter access functions.
+-   **Mainnet Authorization Mode**: After the mainnet launch, EIP-712 signature authorization interaction will be fully adopted to reduce on-chain visible behavior.
+
+#### UserId Contract
+```solidity
+mapping(address => uint256) internal _userIds;
+uint256 internal _currentUserId;
+    
+constructor(address addrManager_) Modifier(addrManager_) {
+    _currentUserId = 10000;
+}
+/**
+  * @dev Get my user id
+  * @param token_ SIWE token
+  */
+function myUserId(bytes memory token_) public view returns (uint256) {
+
+    address sender = msg.sender;
+    if (sender == address(0)) {
+        sender = ISiweAuth(SIWE_AUTH).getMsgSender(token_);
+    }
+    if (_blacklist[sender]) revert Blacklisted();
+    return _userIds[sender];
+}
+```
   
-> 测试网策略: 测试网保留直接交互以便调试与验证。
+> Testnet Strategy: The testnet retains direct interaction for debugging and verification.
 
-### 数据安全
+### Data Security
 
-- **文件粉碎存储**：将文件切片粉碎后，分散存储于 IPFS/Arweave，需要完整的文件才能拼接还原。
-- **端到端加密**：文件分散存储信息（CID和password）在本地以对称加密（如 AES-256-GCM）处理。
-- **链上密钥封装**：解密密钥在 Sapphire TEE 内加密存储，仅授权用户可解密。
-- **公开元数据**：TruthBox 的元数据文件完全公开，但只包含解密公钥和文件粉碎存储信息加密后的数据，便于验证与索引。
+-   **File Shredding Storage**: Files are sliced and shredded, then distributed and stored on IPFS/Arweave. The complete file is needed to splice and restore.
+-   **End-to-End Encryption**: File distributed storage information (CID and password) is processed locally with symmetric encryption (such as AES-256-GCM).
+-   **On-chain Key Encapsulation**: The decryption key is encrypted and stored in the Sapphire TEE, and only authorized users can decrypt it.
+-   **Public Metadata**: The metadata file of the TruthBox is completely public, but it only contains the decryption public key and the encrypted data of the file shredding storage information, facilitating verification and indexing.
 
-> 机密内容在 Sapphire 上以加密形态存在，配合 SIWE + EIP-712，既保证隐私，又保持可验证与可审计的链上规则。
+> Confidential content exists in encrypted form on Sapphire, combined with SIWE + EIP-712, ensuring privacy while maintaining verifiable and auditable on-chain rules.

@@ -37,9 +37,9 @@ const ShareModal: React.FC<ShareModalProps> = ({
   const handleCopyLink = async () => {
     try {
       await navigator.clipboard.writeText(url);
-      alert('链接已复制到剪贴板！');
+      alert('Link copied to clipboard!');
     } catch (err) {
-      console.error('复制失败:', err);
+      console.error('Copy failed:', err);
     }
   };
 
@@ -53,7 +53,7 @@ const ShareModal: React.FC<ShareModalProps> = ({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between mb-4">
-          <h3 className="text-white text-lg font-bold">分享</h3>
+          <h3 className="text-white text-lg font-bold">Share</h3>
           <button
             onClick={() => onOpenChange(false)}
             className="text-white/70 hover:text-white"
@@ -85,7 +85,7 @@ const ShareModal: React.FC<ShareModalProps> = ({
             onClick={handleCopyLink}
             className="px-4 py-2 bg-theme text-white rounded hover:opacity-80 transition"
           >
-            复制
+            Copy
           </button>
         </div>
       </div>

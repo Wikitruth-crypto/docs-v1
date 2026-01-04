@@ -4,11 +4,10 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'WikiTruth Docs',
-  tagline: '基于 Oasis Sapphire 的隐私证据市场文档',
-  favicon: 'favicon.svg',
+  tagline: 'Documentation for the privacy evidence market based on Oasis Sapphire',
+  favicon: '/logo/logo-2.svg',
 
-  // 设置为中文为默认语言
-  url: 'https://docs.wikitruth.io',
+  url: 'https://docs.wikitruth.eth.limo',
   baseUrl: '/',
   organizationName: 'wikitruth',
   projectName: 'wikitruth-docs',
@@ -18,18 +17,25 @@ const config: Config = {
     format: 'mdx',
   },
 
-  // 多语言支持（暂时禁用，后续再启用）
-  // i18n: {
-  //   defaultLocale: 'zh',
-  //   locales: ['zh'],
-  //   localeConfigs: {
-  //     zh: {
-  //       label: '中文',
-  //       direction: 'ltr',
-  //       htmlLang: 'zh-CN',
-  //     },
-  //   },
-  // },
+  // i18n configuration - English as default, Chinese as translation
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+      },
+      zh: {
+        label: '中文',
+        direction: 'ltr',
+        htmlLang: 'zh-CN',
+        calendar: 'gregory',
+      },
+    },
+  },
 
   presets: [
     [
@@ -37,18 +43,18 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // 编辑链接 - 可以根据需要配置
+          // Edit link - can be configured as needed
           editUrl: undefined,
-          // 在文档页面显示最后更新时间（如果不在 git 仓库中，设置为 false）
+          // Show last update time on doc pages (set to false if not in git repo)
           showLastUpdateTime: false,
-          // 在文档页面显示最后更新作者
+          // Show last update author on doc pages
           showLastUpdateAuthor: false,
-          // 文档路径，使用默认值，i18n 会自动处理语言子目录
+          // Docs path, using default value, i18n will automatically handle language subdirectories
           path: 'docs',
-          // 设置文档路由为 /docs
+          // Set docs route to /docs
           routeBasePath: 'docs',
         },
-        blog: false, // 禁用博客功能
+        blog: false, // disable blog feature
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -56,9 +62,12 @@ const config: Config = {
     ],
   ],
 
+  // Client module: Automatically add click-to-copy functionality for addresses in tables
+  clientModules: [require.resolve('./src/clientModules/copyAddress.js')],
+
   themeConfig: {
-    // 使用默认的 Navbar 和 Footer，但配置样式和内容
-    // 注意：自定义组件已保留在 src/theme/Navbar/index.custom.tsx 和 src/theme/Footer/index.custom.tsx 中
+    // use the default Navbar and Footer, but configure the styles and content
+    // note: the custom components are kept in src/theme/Navbar/index.custom.tsx and src/theme/Footer/index.custom.tsx
     navbar: {
       title: 'Wiki Truth',
       logo: {
@@ -71,22 +80,22 @@ const config: Config = {
       hideOnScroll: false,
       items: [
         {
-          to: 'https://wikitruth.io',
+          to: 'https://wikitruth.eth.limo',
           label: 'Home',
           position: 'left',
         },
         {
-          href: 'https://wikitruth.io/roadmap',
+          href: 'https://wikitruth.eth.limo/roadmap',
           label: 'Roadmap',
           position: 'left',
         },
         {
-          href: 'https://wikitruth.io/blog',
+          href: 'https://wikitruth.eth.limo/blog',
           label: 'Blog',
           position: 'left',
         },
         {
-          href: 'https://wikitruth.io/team',
+          href: 'https://wikitruth.eth.limo/team',
           label: 'Team',
           position: 'left',
         },
@@ -97,7 +106,11 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://beta.wikitruth.io',
+          type: 'localeDropdown',
+          position: 'right',
+        },
+        {
+          href: 'https://beta.wikitruth.eth.limo',
           label: 'Beta App',
           position: 'right',
           className: 'button button--primary',
@@ -149,10 +162,10 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['solidity', 'bash', 'json'],
     },
-    // 配置颜色模式 - 强制使用深色模式
+    // configure color mode - force dark mode
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: false, // 允许用户切换，但默认是深色
+      disableSwitch: false, // allow user to switch, but default is dark
       respectPrefersColorScheme: false,
     },
   } satisfies Preset.ThemeConfig,
