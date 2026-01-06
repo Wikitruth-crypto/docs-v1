@@ -15,7 +15,7 @@ export function CopyableAddress({ address, className = '' }: CopyableAddressProp
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error('Failed to copy address:', err);
-      // Fallback: use traditional method
+      // 降级方案：使用传统方法
       const textArea = document.createElement('textarea');
       textArea.value = address;
       textArea.style.position = 'fixed';

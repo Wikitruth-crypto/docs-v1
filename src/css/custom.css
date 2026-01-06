@@ -12,7 +12,7 @@
   --card-foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
   --popover: oklch(1 0 0); /* old dark: oklch(0.21 0.006 285.885) */
   --popover-foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
-  --primary: oklch(0.205 0 0); /* old dark: oklch(0.696 0.17 162.48) - green */
+  --primary: oklch(0.205 0 0); /* old dark: oklch(0.696 0.17 162.48) - 绿色 */
   --primary-foreground: oklch(0.985 0 0); /* old dark: oklch(0.393 0.095 152.535) */
   --secondary: oklch(0.97 0 0); /* old dark: oklch(0.274 0.006 286.033) */
   --secondary-foreground: oklch(0.205 0 0); /* old dark: oklch(0.985 0 0) */
@@ -331,7 +331,7 @@ blockquote * {
   padding: 0 !important;
 }
 
-/* title style in the document content - larger and bolder */
+/* title style in the document content -加大、加粗 */
 .theme-doc-markdown h1,
 .theme-doc-markdown h2,
 .theme-doc-markdown h3,
@@ -389,7 +389,7 @@ blockquote * {
   margin-bottom: 0.625rem !important;
 }
 
-/* Copyable address cell styles */
+/* 可复制的地址单元格样式 */
 .theme-doc-markdown table td.copyable-address-cell {
   cursor: pointer !important;
   user-select: none !important;

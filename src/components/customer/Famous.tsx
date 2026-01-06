@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { cn } from '../../lib/utils';
 
-// Famous quotes data
+// 名言数据
 const famous = [
-  { proverb: 'The truth is the daughter of time', from: 'Leonardo da Vinci' },
-  { proverb: 'Justice may be delayed, but it will never be absent', from: 'Martin Luther King Jr.' },
-  { proverb: 'There is only one truth', from: 'Arthur Conan Doyle' },
-  { proverb: 'Speak the truth even if your voice trembles', from: 'Margaret Mead' },
+  { proverb: '真相是时间的女儿', from: '达·芬奇' },
+  { proverb: '正义可能会迟到，但永远不会缺席', from: '马丁·路德·金' },
+  { proverb: '真相只有一个', from: '柯南·道尔' },
+  { proverb: '勇敢说出真相，即使声音颤抖', from: '玛格丽特·米德' },
 ];
 
 interface Props {

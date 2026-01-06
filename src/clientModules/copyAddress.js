@@ -1,17 +1,17 @@
-// Client module: Automatically add click-to-copy functionality for Ethereum addresses in tables
-// Only runs in browser environment
+// 客户端模块：自动为表格中的以太坊地址添加点击复制功能
+// 只在浏览器环境中运行
 if (typeof window !== 'undefined') {
 (function () {
-  // Regular expression to detect Ethereum addresses
+  // 检测是否为以太坊地址的正则表达式
   const ETH_ADDRESS_REGEX = /^0x[a-fA-F0-9]{40}$/;
 
-  // Copy address to clipboard
+  // 复制地址到剪贴板
   async function copyToClipboard(text) {
     try {
       await navigator.clipboard.writeText(text);
       return true;
     } catch (err) {
-      // Fallback: use traditional method
+      // 降级方案：使用传统方法
       const textArea = document.createElement('textarea');
       textArea.value = text;
       textArea.style.position = 'fixed';
@@ -30,16 +30,16 @@ if (typeof window !== 'undefined') {
     }
   }
 
-  // Add click-to-copy functionality to address cells
+  // 为地址单元格添加点击复制功能
   function makeAddressCopyable(cell) {
     const text = cell.textContent.trim();
     
-    // Check if it's an Ethereum address
+    // 检查是否为以太坊地址
     if (!ETH_ADDRESS_REGEX.test(text)) {
       return;
     }
 
-    // Skip if already processed
+    // 如果已经处理过，跳过
     if (cell.classList.contains('copyable-address-cell')) {
       return;
     }
@@ -50,10 +50,10 @@ if (typeof window !== 'undefined') {
     cell.style.position = 'relative';
     cell.style.transition = 'color 0.2s ease';
 
-    // Add tooltip
+    // 添加提示
     cell.title = 'Click to copy address';
 
-    // Click event
+    // 点击事件
     cell.addEventListener('click', async function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -62,11 +62,11 @@ if (typeof window !== 'undefined') {
       const success = await copyToClipboard(originalText);
 
       if (success) {
-        // Show copy success feedback
+        // 显示复制成功反馈
         const originalColor = cell.style.color || '';
         cell.style.color = 'var(--theme)';
         
-        // Add checkmark
+        // 添加复选标记
         const checkmark = document.createElement('span');
         checkmark.textContent = ' ✓';
         checkmark.style.marginLeft = '8px';
@@ -74,7 +74,7 @@ if (typeof window !== 'undefined') {
         checkmark.style.color = 'var(--theme)';
         cell.appendChild(checkmark);
 
-        // Restore after 2 seconds
+        // 2秒后恢复
         setTimeout(() => {
           cell.style.color = originalColor;
           if (checkmark.parentNode) {
@@ -84,7 +84,7 @@ if (typeof window !== 'undefined') {
       }
     });
 
-    // Mouse hover effect
+    // 鼠标悬停效果
     cell.addEventListener('mouseenter', function () {
       if (!cell.style.color || cell.style.color === 'var(--theme)') {
         return;
@@ -100,7 +100,7 @@ if (typeof window !== 'undefined') {
     });
   }
 
-  // Process all cells in tables
+  // 处理表格中的所有单元格
   function processTables() {
     const tables = document.querySelectorAll('.theme-doc-markdown table');
     
@@ -112,19 +112,19 @@ if (typeof window !== 'undefined') {
     });
   }
 
-  // Execute after page load
+  // 页面加载完成后执行
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', processTables);
   } else {
     processTables();
   }
 
-  // Listen for Docusaurus route changes (SPA navigation)
+  // 监听 Docusaurus 路由变化（SPA 导航）
   if (typeof window !== 'undefined' && window.docusaurus) {
     window.addEventListener('docusaurus:routeUpdate', processTables);
   }
 
-  // Use MutationObserver to monitor dynamic content changes
+  // 使用 MutationObserver 监听动态内容变化
   const observer = new MutationObserver((mutations) => {
     let shouldProcess = false;
     mutations.forEach((mutation) => {

@@ -43,15 +43,15 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Edit link - can be configured as needed
+          // 编辑链接 - 可以根据需要配置
           editUrl: undefined,
-          // Show last update time on doc pages (set to false if not in git repo)
+          // 在文档页面显示最后更新时间（如果不在 git 仓库中，设置为 false）
           showLastUpdateTime: false,
-          // Show last update author on doc pages
+          // 在文档页面显示最后更新作者
           showLastUpdateAuthor: false,
-          // Docs path, using default value, i18n will automatically handle language subdirectories
+          // 文档路径，使用默认值，i18n 会自动处理语言子目录
           path: 'docs',
-          // Set docs route to /docs
+          // 设置文档路由为 /docs
           routeBasePath: 'docs',
         },
         blog: false, // disable blog feature
@@ -62,7 +62,7 @@ const config: Config = {
     ],
   ],
 
-  // Client module: Automatically add click-to-copy functionality for addresses in tables
+  // 客户端模块：自动为表格中的地址添加点击复制功能
   clientModules: [require.resolve('./src/clientModules/copyAddress.js')],
 
   themeConfig: {
@@ -123,18 +123,6 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            {
-              label: 'Twitter',
-              href: 'https://x.com/WikiTruthLabs',
-            },
-            {
-              label: 'Telegram',
-              href: 'https://t.me/+kKfEGJ6Ua2FhYjI1',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/KVDs7CFSr2',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/WikiTruth-crypto',
