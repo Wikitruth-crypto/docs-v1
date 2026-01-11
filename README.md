@@ -144,9 +144,10 @@ After building, deploy the contents of the `build/` directory to a static websit
 
 ## Related Links
 
-- **Main Site**: https://wikitruth.eth.limo
-- **Beta App**: https://beta.wikitruth.eth.limo
-- **Documentation Site**: https://docs.wikitruth.eth.limo
+- **Main Site**: https://wikitruth.xyz
+- **App**: https://app.wikitruth.xyz
+- **App on ipfs**: https://app.wikitruth.eth.limo
+- **Documentation Site**: https://docs.wikitruth.xyz
 
 ## License
 

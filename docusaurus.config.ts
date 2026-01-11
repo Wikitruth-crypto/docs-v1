@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'WikiTruth Docs',
   tagline: 'Documentation for the privacy evidence market based on Oasis Sapphire',
-  favicon: '/logo/logo-2.svg',
+  favicon: '/logo/logo-3.svg',
 
-  url: 'https://docs.wikitruth.eth.limo',
+  url: 'https://docs.wikitruth.xyz',
   baseUrl: '/',
   organizationName: 'wikitruth',
   projectName: 'wikitruth-docs',
@@ -43,15 +43,10 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // 编辑链接 - 可以根据需要配置
           editUrl: undefined,
-          // 在文档页面显示最后更新时间（如果不在 git 仓库中，设置为 false）
           showLastUpdateTime: false,
-          // 在文档页面显示最后更新作者
           showLastUpdateAuthor: false,
-          // 文档路径，使用默认值，i18n 会自动处理语言子目录
           path: 'docs',
-          // 设置文档路由为 /docs
           routeBasePath: 'docs',
         },
         blog: false, // disable blog feature
@@ -62,7 +57,6 @@ const config: Config = {
     ],
   ],
 
-  // 客户端模块：自动为表格中的地址添加点击复制功能
   clientModules: [require.resolve('./src/clientModules/copyAddress.js')],
 
   themeConfig: {
@@ -80,22 +74,22 @@ const config: Config = {
       hideOnScroll: false,
       items: [
         {
-          to: 'https://wikitruth.eth.limo',
+          to: 'https://wikitruth.xyz',
           label: 'Home',
           position: 'left',
         },
         {
-          href: 'https://wikitruth.eth.limo/roadmap',
+          href: 'https://wikitruth.xyz/roadmap',
           label: 'Roadmap',
           position: 'left',
         },
         {
-          href: 'https://wikitruth.eth.limo/blog',
+          href: 'https://wikitruth.xyz/blog',
           label: 'Blog',
           position: 'left',
         },
         {
-          href: 'https://wikitruth.eth.limo/team',
+          href: 'https://wikitruth.xyz/team',
           label: 'Team',
           position: 'left',
         },
@@ -110,7 +104,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://beta.wikitruth.eth.limo',
+          href: 'https://app.wikitruth.xyz',
           label: 'Beta App',
           position: 'right',
           className: 'button button--primary',
